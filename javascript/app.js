@@ -19,7 +19,11 @@ var instances1 = M.Sidenav.init(elems1, options)
   // Or with jQuery
 
   $(document).ready(function(){
-    $('.sidenav').sidenav();
+    $('.sidenav').sidenav({
+       draggable: true,
+       outDuration: 10000
+
+    });
   });
 
 setTimeout(function() {
