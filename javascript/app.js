@@ -26,9 +26,7 @@ let elems2 = document.querySelectorAll('.carousel');
 
     });
   });
-let instance = M.Carousel.init({
-  fullWidth: true
-})
+
 
 
 setTimeout(function() {
