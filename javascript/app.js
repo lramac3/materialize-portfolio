@@ -26,8 +26,10 @@ let elems2 = document.querySelectorAll('.carousel');
 
     });
   });
-let instance = M.Carousel.getInstance(elem)
-instance.next(3)
+let instance = M.Carousel.init({
+  fullWidth: true
+})
+
 
 setTimeout(function() {
   $("#icon").addClass("scale-in");
