@@ -25,13 +25,14 @@ let elems2 = document.querySelectorAll('.carousel');
       
 
     });
-    $('.carousel').carousel({
-        duration: 300,
-    })
+ 
 
   });
 let instance = M.Carousel.getInstance(elem)
 instance.next(3)
+$(document).ready(function () {
+  $('.carousel').carousel()
+})
 
 
 
