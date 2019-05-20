@@ -23,11 +23,11 @@ let elems2 = document.querySelectorAll('.carousel');
     $('.sidenav').sidenav({
        draggable: true,
       });
- $('.carousel').carousel({
-  duration: 300,
-  numVisible: 2,
-  indicators: true
-})
+//  $('.carousel').carousel({
+//   duration: 300,
+//   numVisible: 2,
+//   indicators: true
+// })
 
 
   });
