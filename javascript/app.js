@@ -25,7 +25,7 @@ let elems2 = document.querySelectorAll('.carousel');
       });
  $('.carousel').carousel({
   duration: 300,
-  numVisible: 5,
+  numVisible: 2,
   indicators: true
 })
 
