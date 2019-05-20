@@ -25,9 +25,14 @@ let elems2 = document.querySelectorAll('.carousel');
       
 
     });
+    $('.carousel').carousel({
+        fullWidth:true,
+    })
+
   });
 let instance = M.Carousel.getInstance(elem)
 instance.next(3)
+
 
 
 
