@@ -26,7 +26,7 @@ let elems2 = document.querySelectorAll('.carousel');
 
     });
     $('.carousel').carousel({
-        
+        duration: 300,
     })
 
   });
