@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
   let elems1 = document.querySelectorAll('.sidenav')
 let instances1 = M.Sidenav.init(elems1, options)
 let elems2 = document.querySelectorAll('.carousel');
-    let instances = M.Carousel.init(elems2, options);
+    let instances2 = M.Carousel.init(elems2, options);
 });
 
 // Initialize collapsible (uncomment the lines below if you use the dropdown variation)
@@ -26,6 +26,10 @@ let elems2 = document.querySelectorAll('.carousel');
 
     });
   });
+
+  let instance = M.Carousel.init({
+  fullWidth: true
+})
 
 
 
