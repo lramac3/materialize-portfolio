@@ -22,20 +22,17 @@ let elems2 = document.querySelectorAll('.carousel');
   $(document).ready(function(){
     $('.sidenav').sidenav({
        draggable: true,
-      
+      });
+ $('.carousel').carousel({
+  duration: 300,
+  numVisible: 5,
+  indicators: true
+})
 
-    });
- 
 
   });
 
-$(document).ready(function () {
-  $('.carousel').carousel({
-      duration: 300,
-      numVisible: 5,
-      indicators: true
-  })
-})
+
 
 
 
