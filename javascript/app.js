@@ -30,7 +30,9 @@ let elems2 = document.querySelectorAll('.carousel');
   });
 
 $(document).ready(function () {
-  $('.carousel').carousel()
+  $('.carousel').carousel({
+      duration: 300,
+  })
 })
 
 
