@@ -25,9 +25,10 @@ let elems2 = document.querySelectorAll('.carousel');
       });
  $('.carousel').carousel({
   
-  numVisible: 7,
+  numVisible: 5,
   dist: -100,
-  
+  noWrap: false,
+  shift: -800,
 
 });
 setInterval(() => {
