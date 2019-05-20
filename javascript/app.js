@@ -23,29 +23,16 @@ let elems2 = document.querySelectorAll('.carousel');
     $('.sidenav').sidenav({
        draggable: true,
       });
-//  $('.carousel').carousel({
-//   duration: 300,
-//   numVisible: 2,
-//   indicators: true
-// })
-$('#owl-2 .owl-carousel').owlCarousel({
-  items: 5,
-  margin: 16,
-  stagePadding: 32,
-  loop: true,
-  autoplay: true,
-  autoplaySpeed: 500,
-  navSpeed: 500,
-  dots: false,
-  dotsEach: true,
-  nav: true,
-  // navText: ['Back','Next'],
-  navText: ['', ''],
-  autoplayTimeout: 2000,
-  autoplayHoverPause: false,
-  animateOut: 'slideOutDown',
-  animateIn: 'flipInX'
-})
+ $('.carousel').carousel({
+  
+  numVisible: 7,
+  dist: -100,
+  
+
+});
+setInterval(() => {
+    $('.carousel').carousel('next')
+}, 2000);
 
 
   });
