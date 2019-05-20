@@ -3,13 +3,14 @@ $(document).ready(function() {
   $(".parallax").parallax();
 });
 document.addEventListener("DOMContentLoaded", function() {
-  var elems = document.querySelectorAll(".fixed-action-btn");
-  var instances = M.FloatingActionButton.init(elems, {
+  let elems = document.querySelectorAll(".fixed-action-btn");
+  let instances = M.FloatingActionButton.init(elems, {
     hoverEnabled: false,
   });
-  var elems1 = document.querySelectorAll('.sidenav')
-var instances1 = M.Sidenav.init(elems1, options)
-
+  let elems1 = document.querySelectorAll('.sidenav')
+let instances1 = M.Sidenav.init(elems1, options)
+let elems2 = document.querySelectorAll('.carousel');
+    let instances = M.Carousel.init(elems2, options);
 });
 
 // Initialize collapsible (uncomment the lines below if you use the dropdown variation)
@@ -25,6 +26,8 @@ var instances1 = M.Sidenav.init(elems1, options)
 
     });
   });
+let instance = M.Carousel.getInstance(elem)
+instance.next(3)
 
 setTimeout(function() {
   $("#icon").addClass("scale-in");
