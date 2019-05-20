@@ -33,6 +33,7 @@ $(document).ready(function () {
   $('.carousel').carousel({
       duration: 300,
       numVisible: 5,
+      indicator: true
   })
 })
 
