@@ -7,15 +7,12 @@ document.addEventListener("DOMContentLoaded", function() {
   var instances = M.FloatingActionButton.init(elems, {
     hoverEnabled: false,
   });
+  var elems1 = document.querySelectorAll('.sidenav')
+var instances1 = M.Sidenav.init(elems1, options)
+
 });
 
-
-  document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, options);
-  });
-
-  // Initialize collapsible (uncomment the lines below if you use the dropdown variation)
+// Initialize collapsible (uncomment the lines below if you use the dropdown variation)
   // var collapsibleElem = document.querySelector('.collapsible');
   // var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
 
@@ -24,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
   $(document).ready(function(){
     $('.sidenav').sidenav();
   });
-  
+
 setTimeout(function() {
   $("#icon").addClass("scale-in");
 }, 1000);
