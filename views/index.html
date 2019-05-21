@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/vendors/formvalidation/dist/css/formValidation.min.css">
+    <title>Linu Ramachandran</title>
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <nav class="teal">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo">
+                        <h5>Linu Ramachandran</h5>
+                    </a>
+                    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down" id="navList">
+                        <li><a href="#landing">Home</a></li>
+                        <li><a href="#intro">About Me</a></li>
+                        <li><a href="#work">Projects</a></li>
+                        <li><a href="#skillsets">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+ 
+</div>
+
+<ul id="slide-out" class="sidenav">
+
+    <li><a href="#landing"><i class="fas fa-home"></i>Home</a></li>
+    <li><a href="#intro"> <i class="fas fa-user-circle"></i>About Me</a></li>
+    <li><a href="#work"><i class="fas fa-project-diagram"></i>Projects</a></li>
+    <li><a href="#skillsets"><i class="fas fa-tools"></i>Skills</a></li>
+    <li><a href="#contact"><i class="fas fa-address-card"></i>Contact</a></li>
+    <li><a class="sidenav-close" href="#!"><i class="fas fa-times-circle"></i>Exit</a></li>
+</ul>
+
+    <div class="section responsive-img" id="landing">
+        <h5 id="mainText" class="center">Hello! I'm</h5>
+        <h1 style="color: white;" class="center">
+           Linu <b>Ramachandran</b>
+        </h1>
+        <h6 id="mainText" class="center">Software QA Engineer, Full-Stack Web Designer & Developer</h6>
+    </div>
+
+
+
+    <div class="fixed-action-btn vertical">
+        <a id="icon"
+            class="btn-floating waves-effect click-to-toggle scale-transition scale-out btn-large teal">
+            <i class="fa fa-globe"></i>
+        </a>
+        <ul>
+            <li><a class="btn-floating black darken-4" href="https://github.com/lramac3" target="_blank"><i
+                        class="fab fa-github"></i></a></li>
+            <li><a class="btn-floating light-blue darken-3" href="https://www.linkedin.com/in/linu-r/"
+                    target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a class="btn-floating grey lighten-1" href=""
+                    target="_blank"> <i class="far fa-file-alt"></i></a></li>
+        </ul>
+    </div>
+
+    <div id="intro" class="section grey lighten-1">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h2 class="center header"> "Earn things in life so they have more value"</h2>
+                </div>
+            </div>
+            <div class="row center">
+                <div class="col s12 m12 l3">
+                    <img class="square responsive-img" src="images/me.jpg">
+                </div>
+                <dic class="col s12 m12 offset-l1 l8 ">
+                    <h5 class="center"> <b>ABOUT ME</b></h5>
+                    <p>
+                        I am a Software QA Engineer and Full-Stack Web Developer based in Atlanta, Georgia. As a web developer, I enjoy using my obsessive attention to detail, my unequivocal love for making things, and my mission-driven work ethic to make a difference in the world. My hobbies include playing ping pong, chess, and reading the latest news in the tech world. Technology has the ability to impact lives at a level and scale that has never been realized in the history of mankind.
+                        The idea that something I create can impact someone across the world now, or in the future is what drives my passion for technology. I love to travel because not only is it the ultimate adventure but it also exposes you to new types of people, different ways of living, and opens up your mind.
+                        <br />
+                    </p>
+                </dic>
+            </div>
+        </div>
+    </div>
+
+    <div id="p1" class="parallax-container">
+        <div class="parallax">
+            <img src="images/bg.jpg">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 center white-text">
+                    <br><br><br><br><br><br>
+                    <h3>Fast load times, smooth interaction, responsive UI, and a simple interface are my specialities
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="section grey lighten-1" style="background-color: grey lighten-1;" id="work">
+    <div class="container">
+        <h3 class="header text_b center">My Projects </h3>
+<div class="row">
+    <div class="col s12">
+        <ul class="tabs transparent" materialize="tabs">
+            <li class="tab col s3"><a href="#test1" class="teal-text"></i>Front-end</a></li>
+            <li class="tab col s3"><a class="teal-text" href="#test2">Back-end</a></li>
+            <!-- <li class="tab col s3 disabled"><a href="#test3">Disabled Tab</a></li> -->
+            <li class="tab col s3"><a href="#test4" class="active teal-text">Full-stack</a></li>
+        <!-- <div class="indicator teal" style="z-index:1"></div> -->
+        </ul>
+    </div>
+    <div id="test1" class="col s12"><div class="row">
+        <div class="col s12 m12 l4">
+            <div class="card hoverable teal ">
+                <div class="card-image waves-effect waves-block waves-light">
+                   <img class="activator" src="images/GOT.jpg">
+                <a class="btn-floating fab pulse activator"><i class="fas fa-info-circle"></i></a>
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator purple-text text-lighten-5">
+                        Clicky GOT<i
+                            class="mdi-navigation-more-vert right"></i>
+                        </span>
+                    <p><a class="purple-text text-lighten-5" href="https://lramac3.github.io/Clicky-Game/"
+                            target="_blank"><i class="tiny material-icons">visibility</i> Project</a></p>
+                    <p><a class="purple-text text-lighten-5" href="https://github.com/lramac3/Clicky-Game.git"
+                            target="_blank"><i class="fab fa-github"></i> Github</a></p>
+                </div>
+                <div class="card-reveal teal">
+                    <span class="card-title purple-text text-lighten-5">Clicky GOT<i
+                            class="mdi-navigation-close right">x</i></span>
+                    <p>Welcome to Clicky Game of Thrones! Clicky game is a react application wherein user can click on GOT character cards to score points. But, user can only
+                    click on a character's card once. If the user clicks on the same character's card more than once, the game ends. The
+                    game keeps track of the highest score of the current session. If user scores 18 without any repeats, user wins and the
+                    game resets.</p>
+                    <p>Technologies utilized: React.js, Bootstrap</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m12 l4">
+            <div class="card hoverable teal">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="./images/hike.jpg">
+                    <a class="btn-floating fab pulse activator"><i class="fas fa-info-circle"></i></a>
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator purple-text text-lighten-5">Rally<i
+                            class="mdi-navigation-more-vert right"></i></span>
+                    <p><a class="purple-text text-lighten-5" href="https://boiling-fortress-49835.herokuapp.com/"
+                            target="_blank"><i class="tiny material-icons">visibility</i> Project
+                            </a></p>
+                    <p><a class="purple-text text-lighten-5" href="https://github.com/trozio/Project-two"
+                            target="_blank"><i class="fab fa-github"></i> Github</a></p>
+                </div>
+                <div class="card-reveal teal">
+                    <span class="card-title purple-text text-lighten-5">Rally<i
+                            class="mdi-navigation-close right">x</i></span>
+                    <p>Welcome to Rally! This is a social media website that's meant to bring people together.
+                        Using Rally you can create events that you or a group may be hosting. Once created, your
+                        event can be seen by the world. Anyone can choose to join your event to get details
+                        about location, time, who's participating, and any other details you include about it.
+                        Rally on!</p>
+                        <p>Technologies utilized: MaterializeCSS</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m12 l4">
+            <div class="card hoverable teal">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator"
+                        src="./images/Meal.jpg">
+                        <a class="btn-floating fab pulse activator"><i class="fas fa-info-circle"></i></a>
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator purple-text text-lighten-5">My Next Meal<i
+                            class="mdi-navigation-more-vert right"></i></span>
+                    <p><a class="purple-text text-lighten-5" href="https://lramac3.github.io/My-Next-Meal/" target="_blank"><i
+                                class="tiny material-icons">visibility</i> Project
+                        </a></p>
+                    <p><a class="purple-text text-lighten-5" href="https://github.com/lramac3/My-Next-Meal" target="_blank"><i
+                                class="fab fa-github"></i> Github</a></p>
+                </div>
+                <div class="card-reveal teal">
+                    <span class="card-title purple-text text-lighten-5">My Next Meal<i
+                            class="mdi-navigation-close right">x</i></span>
+                    <p>An application that offers healthy recipes for the on the go, sort on time indivdual.</p>
+                <p>Technologies utilized: Bootstrap, Javascript, Firebase</p>
+                </div>
+            </div>
+        </div>
+<div class="col s12 m12 l4">
+    <div class="card hoverable teal">
+        <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="./images/RPS.jpg">
+            <a class="btn-floating fab pulse activator"><i class="fas fa-info-circle"></i></a>
+        </div>
+        <div class="card-content">
+            <span class="card-title activator purple-text text-lighten-5">Rock Paper Scissors<i
+                    class="mdi-navigation-more-vert right"></i></span>
+            <p><a class="purple-text text-lighten-5" href="https://lramac3.github.io/RPS-Multiplayer/" target="_blank"><i
+                        class="tiny material-icons">visibility</i> Project
+                </a></p>
+            <p><a class="purple-text text-lighten-5" href="https://github.com/lramac3/RPS-Multiplayer" target="_blank"><i
+                        class="fab fa-github"></i> Github</a></p>
+        </div>
+        <div class="card-reveal teal">
+            <span class="card-title purple-text text-lighten-5">Rock Paper Scissors<i
+                    class="mdi-navigation-close right">x</i></span>
+            <p>The main goal of this project was to create the game rock, paper, scissors, using the Firebase database. This game is a
+            multiplayer game, that keeps track of user's inputs and displays them across any browser that has the page open.</p>
+            <p>Technologies utilized: Bootstrap, Javascript, Firebase</p>
+        </div>
+    </div>
+</div>
+<div class="col s12 m12 l4">
+    <div class="card hoverable teal">
+        <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="./images/SW-RPG.jpg">
+            <a class="btn-floating fab pulse activator"><i class="fas fa-info-circle"></i></a>
+        </div>
+        <div class="card-content">
+            <span class="card-title activator purple-text text-lighten-5">Star Wars RPG<i
+                    class="mdi-navigation-more-vert right"></i></span>
+            <p><a class="purple-text text-lighten-5" href="https://lramac3.github.io/Star-Wars-RPG/"
+                    target="_blank"><i class="tiny material-icons">visibility</i> Project
+                </a></p>
+            <p><a class="purple-text text-lighten-5" href="https://github.com/lramac3/Star-Wars-RPG.git"
+                    target="_blank"><i class="fab fa-github"></i> Github</a></p>
+        </div>
+        <div class="card-reveal teal">
+            <span class="card-title purple-text text-lighten-5">Star Wars RPG<i
+                    class="mdi-navigation-close right">x</i></span>
+            <p>Select the character that you want to play as.
+            Each character has a given base attack power. Every time you attack an opponent, your attack power increases by your
+            base attack power (e.g. if your base attack power is 5, your first attack will inflict 5 damage, your second attack 10,
+            and so on).
+            After you attack, your opponent will counter-attack you. Each opponent has a different given counter-attack power.
+            Counter-attack power does not increase.
+            No player can heal throughout the game.
+            Beat three opponents in any order you want, one at a time, to win the game. Choose wisely to build up your attack
+            power!
+            If you die, you lose!
+</p>
+            <p>Technologies utilized: Bootstrap, jQuery</p>
+        </div>
+    </div>
+</div>
+
+    </div></div>
+    <div id="test2" class="col s12">
+        <div class="row">
+            <div class="col s12 m12 l4">
+                <div class="card hoverable teal">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="images/Bamazon.png">
+                        <a class="btn-floating fab pulse activator"><i class="fas fa-info-circle"></i></a>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator purple-text text-lighten-5">Bamazon CLI<i
+                                class="mdi-navigation-more-vert right"></i></span>
+                        <p><a class="purple-text text-lighten-5" href="https://www.npmjs.com/package/bamazon-cli"
+                                target="_blank"><i class="tiny material-icons">visibility</i> Project</a></p>
+                        <p><a class="purple-text text-lighten-5" href="https://github.com/lramac3/bamazon"
+                                target="_blank"><i class="fab fa-github"></i> Github</a></p>
+                    </div>
+                    <div class="card-reveal teal">
+                        <span class="card-title purple-text text-lighten-5">Bamazon CLI<i
+                                class="mdi-navigation-close right">x</i></span>
+                        <p>Find everything you need at Bamazon! Bamazon, the node cli shopping app is an interactive app which allows the users to
+                        purchase items as a customer, view, track and update the product inventory as a manager, and track the total sales by
+                        department as a supervisor.</p>
+                        <p>Technologies utilized: Node.js
+</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m12 l4">
+                <div class="card hoverable teal">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="./images/word-guess.jpg">
+                        <a class="btn-floating fab pulse activator"><i class="fas fa-info-circle"></i></a>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator purple-text text-lighten-5">Word Guess CLI<i
+                                class="mdi-navigation-more-vert right"></i></span>
+                        <p><a class="purple-text text-lighten-5" href="https://www.npmjs.com/package/hangman-app"
+                                target="_blank"><i class="tiny material-icons">visibility</i> Project
+                            </a></p>
+                        <p><a class="purple-text text-lighten-5" href="https://github.com/lramac3/Word-Guess-CLI" target="_blank"><i
+                                    class="fab fa-github"></i> Github</a></p>
+                    </div>
+                    <div class="card-reveal teal">
+                        <span class="card-title purple-text text-lighten-5">Word Guess CLI<i
+                                class="mdi-navigation-close right">x</i></span>
+                        <p>Hangman is a word guess command-line game. It is inspired by the classic word game in which you must guess as many
+                        secret words as you can before time runs out! Challenge your friends and learn new words.</p>
+                        <p>Technologies utilized: Node.js</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m12 l4">
+                <div class="card hoverable teal">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator"
+                            src="./images/mgf.jpg">
+                            <a class="btn-floating fab pulse activator"><i class="fas fa-info-circle"></i></a>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator purple-text text-lighten-5">LIRI Bot<i
+                                class="mdi-navigation-more-vert right"></i></span>
+                        <p><a class="purple-text text-lighten-5" href="https://www.npmjs.com/package/liri-node-app1" target="_blank"><i
+                                    class="tiny material-icons">visibility</i> Project
+                            </a></p>
+                        <p><a class="purple-text text-lighten-5" href="https://github.com/lramac3/liri-node-app" target="_blank"><i
+                                    class="fab fa-github"></i> Github</a></p>
+                    </div>
+                    <div class="card-reveal teal">
+                        <span class="card-title purple-text text-lighten-5">Liri Bot<i
+                                class="mdi-navigation-close right">x</i></span>
+                        <p>LIRI is a Language Interpretation and Recognition Interface. LIRI takes the user's command line input to look up movie
+                        info, song info, concert info, or follow written instructions from a text file.</p>
+                        <p>Technologies utilized: Node.js, Axios</p>
+                    </div>
+                </div>
+            </div>
+<div class="col s12 m12 l4">
+    <div class="card hoverable teal">
+        <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="./images/friend.jpg">
+           <a class="btn-floating fab pulse activator"><i class="fas fa-info-circle"></i></a>
+        </div>
+        <div class="card-content">
+            <span class="card-title activator purple-text text-lighten-5">Friend Finder<i
+                    class="mdi-navigation-more-vert right"></i></span>
+            <p><a class="purple-text text-lighten-5" href="https://friend-finder-fsfs.herokuapp.com/"
+                    target="_blank"><i class="tiny material-icons">visibility</i> Project
+                </a></p>
+            <p><a class="purple-text text-lighten-5" href="https://github.com/lramac3/FriendFinder" target="_blank"><i
+                        class="fab fa-github"></i> Github</a></p>
+        </div>
+        <div class="card-reveal teal">
+            <span class="card-title purple-text text-lighten-5">Friend Finder<i
+                    class="mdi-navigation-close right">x</i></span>
+            <p>Friend Finder implements friend matching based on the user's responses to a ten-question survey. The user responds to
+            questions with values from 1 (Strongly Disagree) to 5 (Strongly Agree). The app then takes the scores of the recently
+            completed survey and compares them to every other friend already in the data and returns the one with the lowest
+            difference in score. In other words, it returns the friend with the most answers in common.Users can also access all
+            friends by looking at API Friends List for JSON object of all friends.</p>
+            <p>Technologies utilized: Node.js, Express</p>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+    <!-- <div id="test3" class="col s12">Test 3</div> -->
+    <div id="test4" class="col s12"><div class="row">
+        <div class="col s12 m12 l4">
+            <div class="card hoverable teal">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/Between.jpg">
+                    <a class="btn-floating fab pulse activator"><i class="fas fa-info-circle"></i></a>
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator purple-text text-lighten-5">Betwixt<i
+                            class="mdi-navigation-more-vert right"></i></span>
+                    <p><a class="purple-text text-lighten-5" href="https://betwixt-gt.herokuapp.com/"
+                            target="_blank"><i class="tiny material-icons">visibility</i> Project</a></p>
+                    <p><a class="purple-text text-lighten-5" href="https://github.com/lramac3/Betwixt.git"
+                            target="_blank"><i class="fab fa-github"></i> Github</a></p>
+                </div>
+                <div class="card-reveal teal">
+                    <span class="card-title purple-text text-lighten-5">Betwixt<i
+                            class="mdi-navigation-close right">x</i></span>
+                    <p>Welcome to Betwixt! This app searches midpoint between two locations for points of interest. User can check the weather and chat with other users once signed in.</p>
+                    <p>Technologies utilized: Material UI, Node.js, React.js, Express.js, Google API, MongoDB, Auth0, Pusher</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m12 l4">
+            <div class="card hoverable teal">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="./images/Books.jpg">
+                   <a class="btn-floating fab pulse activator"><i class="fas fa-info-circle"></i></a>
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator purple-text text-lighten-5">Google Books Search<i
+                            class="mdi-navigation-more-vert right"></i></span>
+                    <p><a class="purple-text text-lighten-5" href="https://mern-stack-lr.herokuapp.com/"
+                            target="_blank"><i class="tiny material-icons">visibility</i> Project
+                        </a></p>
+                    <p><a class="purple-text text-lighten-5" href="https://github.com/lramac3/google-books-app.git" target="_blank"><i
+                                class="fab fa-github"></i> Github</a></p>
+                </div>
+                <div class="card-reveal teal">
+                    <span class="card-title purple-text text-lighten-5">Google Books Search<i
+                            class="mdi-navigation-close right">x</i></span>
+                    <p>Welcome to Google Books Search app! This is a React-based Google Books Search app that allows users to search for books via the Google Books API. Users have
+                    the option to "View" a book, bringing them to the book on Google Books, or "Save" a book, saving it to the Mongo
+                    database. Users also have the option to "View" the book from the saved page, bringing them to the book on Google Books,
+                    or "Delete" a book, removing it from the Mongo database.</p>
+                    <p>Technologies utilized: Node.js, React.js, Express.js, Google API, MongoDB</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m12 l4">
+            <div class="card hoverable teal">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator"
+                        src="./images/nyt.jpg">
+                        <a class="btn-floating fab pulse activator"><i class="fas fa-info-circle"></i></a>
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator purple-text text-lighten-5">Food Scraper<i
+                            class="mdi-navigation-more-vert right"></i></span>
+                    <p><a class="purple-text text-lighten-5" href="https://mongo-scraper-ms.herokuapp.com/" target="_blank"><i
+                                class="tiny material-icons">visibility</i> Project
+                        </a></p>
+                    <p><a class="purple-text text-lighten-5" href="https://github.com/lramac3/mongoscraper.git" target="_blank"><i
+                                class="fab fa-github"></i> Github</a></p>
+                </div>
+                <div class="card-reveal teal">
+                    <span class="card-title purple-text text-lighten-5">Food Scraper<i
+                            class="mdi-navigation-close right">x</i></span>
+                    <p>Find the latest articles from food section of New York Times.The user can click on the link to the website and save the article into a database. The user can also add notes and
+                    delete saved articles.</p>
+                    <p>Technologies utilized: Node.js, Express.js, Cheerio, MongoDB</p>
+                </div>
+            </div>
+        </div>
+<div class="col s12 m12 l4">
+    <div class="card hoverable teal">
+        <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="./images/Sequelize-Burger.jpg">
+            <a class="btn-floating fab pulse activator"><i class="fas fa-info-circle"></i></a>
+        </div>
+        <div class="card-content">
+            <span class="card-title activator purple-text text-lighten-5">Sequelize Da Burger<i
+                    class="mdi-navigation-more-vert right"></i></span>
+            <p><a class="purple-text text-lighten-5" href="https://sequelize-da-burger-sdb.herokuapp.com/" target="_blank"><i
+                        class="tiny material-icons">visibility</i> Project
+                </a></p>
+            <p><a class="purple-text text-lighten-5" href="https://github.com/lramac3/Sequelized-Burger"
+                    target="_blank"><i class="fab fa-github"></i> Github</a></p>
+        </div>
+        <div class="card-reveal teal">
+            <span class="card-title purple-text text-lighten-5">Sequelize Da Burger<i
+                    class="mdi-navigation-close right">x</i></span>
+            <p>This is a full-stack web application using MVC architecture wherein users can
+            keep a track of their favorite burgers. They can enter the burger names they wish to eat. Once they eat, they can either
+            like or dislike the restuarant. At any time, a user can see/edit all burgers that they haven't tried, liked or disliked
+            by him. User can also view the wish list of all users in ascending order of their names and burger names.</p>
+            <p>Technologies utilized: Node.js, Express.js, Express Handlebars, Sequelize ORM</p>
+        </div>
+    </div>
+</div>
+<div class="col s12 m12 l4">
+    <div class="card hoverable teal">
+        <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="./images/burger.jpg">
+            <a class="btn-floating fab pulse activator"><i class="fas fa-info-circle"></i></a>
+        </div>
+        <div class="card-content">
+            <span class="card-title activator purple-text text-lighten-5">Eat Da Burger<i
+                    class="mdi-navigation-more-vert right"></i></span>
+            <p><a class="purple-text text-lighten-5" href="https://eat-da-burger-edb.herokuapp.com/"
+                    target="_blank"><i class="tiny material-icons">visibility</i> Project
+                </a></p>
+            <p><a class="purple-text text-lighten-5" href="https://github.com/lramac3/burger"
+                    target="_blank"><i class="fab fa-github"></i> Github</a></p>
+        </div>
+        <div class="card-reveal teal">
+            <span class="card-title purple-text text-lighten-5">Eat Da Burger<i
+                    class="mdi-navigation-close right">x</i></span>
+            <p>Burger Express is a an app that lets users input the names of burgers they'd like to eat. Whenever a user submits a burger's name, the app will add the burger to the Wanna Try list.
+            When the user clicks the like button, the burger will move to the left side of the page. When the user clicks the dislike button, the burger will move to the right side of the page.
+            If a burger is added to the like list or dislike list, user can delete the burger from the list by clicking the trash
+            icon next to the burger.Once the user deletes the burger name, user will have to add the name again to the list to see the same burger's name on
+            the Wanna Try list.
+</p>
+<p>Technologies utilized: Node.js, Express.js, Express Handlebars, MySQL, MVC Design</p>
+        </div>
+    </div>
+</div>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+
+    <div class="section" style="background-color:teal;" id="skillsets">
+        <div class="container">
+            <div class="row">
+                <h1 class="center white-text">
+                    My Skills
+                </h1>
+            </div>
+            
+            <div class="carousel">
+                <a class="carousel-item" href="#one!"><img src="./images/mongodb.jpg"></a>
+                <a class="carousel-item" href="#two!"><img src="https://amandeepmittal.gallerycdn.vsassets.io/extensions/amandeepmittal/expressjs/2.0.0/1509881293872/Microsoft.VisualStudio.Services.Icons.Default"></a>
+                <a class="carousel-item" href="#three!"><img src="./images/react.png"></a>
+                <a class="carousel-item" href="#four!"><img src="https://www.logolynx.com/images/logolynx/c5/c509c38cb89bcf556b2051222663f398.png"></a>
+                <a class="carousel-item" href="#five!"><img src="./images/jquery.jpg"></a>
+               <a class="carousel-item" href="#five!"><img src="./images/mysql.png"></a>
+               <a class="carousel-item" href="#five!"><img src="./images/npm.png"></a>
+               <a class="carousel-item" href="#five!"><img src="./images/materialize.jpg"></a>
+                <a class="carousel-item" href="#five!"><img src="./images/bootstrap.png"></a>
+                <a class="carousel-item" href="#five!"><img src="./images/auth.png"></a>
+            </div>
+          
+        </div>
+    </div>
+
+
+<div class="section" style="background-color:teal;" id="contact">
+    <div class="card-content">
+            <form name="contact-form" class="container1">
+        <span class="card-title">
+            <h3>Have a question or want to work together?</h3>
+        </span>
+        <div class="row">
+
+            <div class="input-field col s6">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="first_name" type="text" required pattern="[a-zA-Z]+(\s[a-zA-Z]*){0,2}" minlength="4" maxlength="20"
+                    aria-required="true">
+                <label for="first_name"> Name</label>
+                <span class="helper-text silver" data-error="Please enter a valid name"></span>
+            </div>
+        <div class="input-field col s6">
+            <i class="material-icons prefix">email</i>
+                <input id="email" type="email" required pattern="^\w+([.-]?\w+)*@\w+([.-]?\w+)*(.\w{2,3})+$"
+                    aria-required="true">
+                <label for="email">Email</label>
+                <span class="helper-text silver" data-error="Email Format: jdoe123@gmail.com"></span>
+            </div>
+            <div class="input-field col s12">
+                <i class="material-icons prefix">subject</i>
+                <input id="subject" type="text" required pattern="[a-zA-Z]+(\s[a-zA-Z]*){0,2}" minlength="4" maxlength="20" aria-required="true">
+                <label for="subject">Subject</label>
+                <span class="helper-text silver" data-error="Please enter a subject"></span>
+            </div>
+            <!-- <div class="input-field col s6">
+                <input id="phone_number" type="tel" class="validate" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    aria-required="true">
+                <label for="phone_number">Phone Number</label>
+                <span class="helper-text" data-error="Phone Number Format: 123-456-7890"></span>
+            </div> -->
+            <div class="row">
+            <div class="input-field col s12">
+                <i class="material-icons prefix">mode_edit</i>
+                <textarea id="textarea2" class="materialize-textarea" data-length="256" ></textarea>
+                <label for="textarea2">Message</label>
+            </div>
+</div>
+
+        </div>
+<div class="input-field col s12">
+    <button class="btn waves-effect waves-light teal" type="submit" name="action">Submit</button>
+</div>
+</form>
+    </div>
+
+</div>
+
+</div>
+</div><!-- End of Sign Up Card row -->
+    
+</div>
+
+    <footer class="section page-footer teal">
+        <div class="container center-align">
+            &#169; Linu Ramachandran 2019
+        </div>
+    </footer>
+
+
+    <!-- Compiled and minified JavaScript -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./javascript/app.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+    <script>
+    $('form').on('submit', (e) => {
+        e.preventDefault();
+        const email =$('#email').val().trim();
+        const subject = $('#subject').val().trim();
+        const text = $('#textarea2').val().trim();
+        
+
+        const data ={email, subject, text};
+        $.post('/email',data, function() {
+            console.log('Server received our data');
+          });
+
+        let frm = document.getElementsByName('contact-form')[0];
+        frm.submit(); // Submit the form
+        frm.reset();  // Reset all form data
+        return false; // Prevent page refresh
+      });
+    </script>
+
+</body>
+
+</html>

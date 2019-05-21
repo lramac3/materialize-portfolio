@@ -1,0 +1,25 @@
+{
+  "name": "materialize-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lramac3/materialize-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lramac3/materialize-portfolio/issues"
+  },
+  "homepage": "https://github.com/lramac3/materialize-portfolio#readme",
+  "dependencies": {
+    "express": "^4.17.0",
+    "nodemailer": "^6.1.1",
+    "nodemailer-mailgun-transport": "^1.4.0"
+  }
+}
