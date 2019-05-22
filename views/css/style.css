@@ -12,15 +12,26 @@ body {
     background-attachment: fixed;
     z-index: -1;
 }
-#mainText{
-    margin-top: 30vh;
-	color:white;
+
+#intro{
+    height: 100vh;
+    background-image: url("../images/aboutme.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
 }
 
-input, textarea{
-	color: white;
+#work{
+    
+    background-image: url("../images/work.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
 }
-
 #skillsets{
     height: 100vh;
     background-image: url("../images/skills.png");
@@ -30,6 +41,25 @@ input, textarea{
     background-attachment: fixed;
     z-index: -1;
 }
+#contact{
+    
+    background-image: url("../images/contact.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+#mainText{
+    margin-top: 30vh;
+	color:white;
+}
+
+input, textarea{
+	color: white;
+}
+
+
 
 
 /* The best way to add custom CSS to Materialize 1.0.0 default tabs is the following: */
