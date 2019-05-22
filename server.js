@@ -2,7 +2,7 @@ const express = require('express');
 const app =express();
 const log = console.log;
 const path = require('path');
-const PORT = 8080;
+const PORT = process.env.PORT ||8080;
 
 app.use(express.urlencoded({
     extended: false
@@ -24,4 +24,4 @@ app.get('*', (req, res) => {
     res.json("Page Not Found!")
   });
 
-app.listen(PORT,() => log('Server is starting on PORT, ', 8080));
+app.listen(PORT,() => log("App running on port " + PORT + "!"));
