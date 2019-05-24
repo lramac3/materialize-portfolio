@@ -13,7 +13,7 @@ const transporter=nodemailer.createTransport(mailGun(auth));
 const sendMail= (email, subject, text, cb) => {
      const mailOptions = {
        from: email,
-       to: "linuram@protonmail.ch",
+       to: "linuram@gmail.com",
        subject,
        text
      };
