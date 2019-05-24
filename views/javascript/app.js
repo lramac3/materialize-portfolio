@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", function() {
   let instances = M.FloatingActionButton.init(elems, {
     hoverEnabled: false,
   });
-  let elems1 = document.querySelectorAll('.sidenav')
-let instances1 = M.Sidenav.init(elems1, options)
-let elems2 = document.querySelectorAll('.carousel');
-    let instances2 = M.Carousel.init(elems2, options);
+  // let elems1 = document.querySelectorAll('.sidenav')
+  // let instances1 = M.Sidenav.init(elems1, options)
+  // let elems2 = document.querySelectorAll('.carousel');
+  //   let instances2 = M.Carousel.init(elems2, options);
     
 });
 

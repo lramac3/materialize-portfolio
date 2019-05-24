@@ -2,26 +2,30 @@ const nodemailer = require('nodemailer');
 const mailGun=require('nodemailer-mailgun-transport');
 
 const auth = {
-    auth: {
-        api_key: process.env.API_KEY,
-        domain:process.env.DOMAIN,
-
-    }
+  auth: {
+    api_key: "21e88ed267bd643f766809f2f31798b9-52b0ea77-3dd6f133",
+    domain: "sandbox693755ca129749139807d0b89701b471.mailgun.org"
+  }
 };
 
-const transporter =nodemailer.createTransport(mailGun(auth));
+const transporter=nodemailer.createTransport(mailGun(auth));
 
-const mailOptions ={
-    from: 'ramramji2001@yahoo.com',
-    to: 'linuram@gmail.com',
-    subject: 'Testing',
-    text:'I would like to get in touch with you'
-};
+const sendMail= (email, subject, text, cb) => {
+     const mailOptions = {
+       from: email,
+       to: "linuram@protonmail.ch",
+       subject,
+       text
+     };
 
-transporter.sendMail(mailOptions, function (err, data) {
-    if (err){
-        console.log('Error occurs');
-    } else {
-        console.log('Message Sent!!!')
-    }
-  });
+     transporter.sendMail(mailOptions, function(err, data) {
+       if (err) {
+        cb(err, null);
+       } else {
+         cb(null, data);
+       }
+     });
+    
+  };
+
+  module.exports = sendMail;

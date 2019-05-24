@@ -1,5 +1,6 @@
 const express = require('express');
 const app =express();
+const sendMail = require('./mail');
 const log = console.log;
 const path = require('path');
 const PORT = process.env.PORT ||8080;
@@ -9,10 +10,17 @@ app.use(express.urlencoded({
 }));
 app.use(express.json());
 
-app.post('/email',(req, res) => {
+app.post('/',(req, res) => {
+    const {subject,email,text} =req.body;
     log('Data :', req.body);
-    res.json({message: 'Message received!'})
-  });
+    sendMail(email, subject, text, function(err, data){
+        if(err) {
+            res.status(500).json({message: 'Internal Error'});
+        } else {
+            res.json({message: 'Email sent!!!'});
+        }
+    });
+ });
 
 app.use(express.static('views'))
 
