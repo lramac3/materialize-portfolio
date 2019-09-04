@@ -54,3 +54,16 @@ $("#submit").on("click", function(event) {
   $("#message").val("");
   M.textareaAutoResize($("#message"));
 });
+
+// $('.tooltip').on('click', function () {
+//     $(this).tooltiptext('visibility',"hidden")
+// })
+
+$('.tooltip').click(function () {
+  if ($('.tooltiptext').is(':visible')) $('.tooltiptext').hide()
+  else $('.tooltiptext').show()
+})
+
+// $('.tooltip').on('click', function () {
+//   $('div[class=tooltiptext]').remove()
+// })
