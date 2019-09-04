@@ -3,7 +3,7 @@ body {
     color: rgba(255,255,255,0.8);
 }
 
-#landing{
+#landing {
     height: 100vh;
     background-image: url("../images/background.jpg");
     background-position: center;
@@ -13,7 +13,7 @@ body {
     z-index: -1;
 }
 
-#intro{
+#intro {
     height: 100vh;
     background-image: url("../images/aboutme.jpg");
     background-position: center;
@@ -23,8 +23,7 @@ body {
     z-index: -1;
 }
 
-#work{
-    
+#work {
     background-image: url("../images/work1.png");
     background-position: center;
     background-size: cover;
@@ -32,7 +31,7 @@ body {
     background-attachment: fixed;
     z-index: -1;
 }
-#skillsets{
+#skillsets {
     height: 100vh;
     background-image: url("../images/skills.png");
     background-position: center;
@@ -41,8 +40,7 @@ body {
     background-attachment: fixed;
     z-index: -1;
 }
-#contact{
-    
+#contact {
     background-image: url("../images/contact.jpg");
     background-position: center;
     background-size: cover;
@@ -50,17 +48,14 @@ body {
     background-attachment: fixed;
     z-index: -1;
 }
-#mainText{
+#mainText {
     margin-top: 30vh;
 	color:white;
 }
 
-input, textarea{
+input, textarea {
 	color: white;
 }
-
-
-
 
 /* The best way to add custom CSS to Materialize 1.0.0 default tabs is the following: */
 
@@ -84,4 +79,24 @@ input, textarea{
 .tabs .indicator {
   background-color:#26a69a !important;
   /*Custom Color Of Indicator*/
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: darkblue;
+  color: #fff;
+  text-align: center;
+  border-radius: 25px;
+  padding: 1px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  float: left;
+  right: 110%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
