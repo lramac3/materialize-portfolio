@@ -64,6 +64,12 @@ $('.tooltip').click(function () {
   else $('.tooltiptext').show()
 })
 
+$('.tooltip1').click(function () {
+  if ($('.tooltiptext1').is(':visible')) $('.tooltiptext1').hide()
+else $('.tooltiptext1').show()
+})
+
+
 // $('.tooltip').on('click', function () {
 //   $('div[class=tooltiptext]').remove()
 // })
