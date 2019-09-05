@@ -55,21 +55,9 @@ $("#submit").on("click", function(event) {
   M.textareaAutoResize($("#message"));
 });
 
-// $('.tooltip').on('click', function () {
-//     $(this).tooltiptext('visibility',"hidden")
-// })
-
 $('.tooltip').click(function () {
   if ($('.tooltiptext').is(':visible')) $('.tooltiptext').hide()
   else $('.tooltiptext').show()
 })
 
-$('.tooltip1').click(function () {
-  if ($('.tooltiptext1').is(':visible')) $('.tooltiptext1').hide()
-else $('.tooltiptext1').show()
-})
 
-
-// $('.tooltip').on('click', function () {
-//   $('div[class=tooltiptext]').remove()
-// })
