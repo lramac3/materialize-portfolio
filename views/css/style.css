@@ -120,3 +120,12 @@ input, textarea {
 .tooltip1:hover .tooltiptext1 {
   visibility: visible;
 }
+
+#overflowTest {
+  color: white;
+  padding: 15px;
+  width: 95%;
+  height: 310px;
+  overflow: scroll;
+  border: 1px solid #ccc;
+}
