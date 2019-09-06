@@ -125,7 +125,16 @@ input, textarea {
   color: white;
   padding: 15px;
   width: 95%;
-  height: 310px;
+  height: 260px;
   overflow: scroll;
   border: 1px solid #ccc;
+}
+
+.brand-logo {
+ height: 1%;
+ display: inline-block;
+ }
+
+ .brand-logo>img {
+    vertical-align: middle
 }

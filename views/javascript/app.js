@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
   let elems = document.querySelectorAll(".fixed-action-btn");
   let instances = M.FloatingActionButton.init(elems, {
     hoverEnabled: false,
-  });
+   });
   // let elems1 = document.querySelectorAll('.sidenav')
   // let instances1 = M.Sidenav.init(elems1, options)
   // let elems2 = document.querySelectorAll('.carousel');
@@ -60,4 +60,12 @@ $('.tooltip').click(function () {
   else $('.tooltiptext').show()
 })
 
-
+document.addEventListener(
+  'touchstart',
+  function addtouchclass (e) {
+    // first time user touches the screen
+    document.documentElement.classList.add('can-touch') // add "can-touch" class to document root using classList API
+    document.removeEventListener('touchstart', addtouchclass, false) // de-register touchstart event
+  },
+  false
+)
