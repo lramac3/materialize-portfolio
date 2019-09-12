@@ -141,6 +141,8 @@ input, textarea {
  display: inline-block;
  }
 
- .brand-logo>img {
-    vertical-align: middle
+ .verticalcenter {
+   display: table-cell;
+    vertical-align: middle;
+    height: 100px;
 }
