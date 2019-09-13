@@ -72,12 +72,10 @@ document.addEventListener(
 
 
 $(function () {
-  $('#pictureEl').click(
-   
-    function (e) {
+  $('picture').click(
+   function (e) {
       let Elem = e.target;
-
-      $(Elem)
+       $(Elem)
         .find('> img.activator')
         .click()
      }
