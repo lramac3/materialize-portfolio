@@ -169,11 +169,18 @@
     </div>
     <div id="test1" class="col s12 cards-container"><div class="row">
         <div class="col s12 m12 l4">
+            <picture>
             <div class="card hoverable teal ">
                 <div class="card-image waves-effect waves-block waves-light">
-                   <img class="activator responsive-img" src="images/GOT.jpg">
+                   <!-- <img class="activator responsive-img" src="images/GOT.jpg"> -->
+                   
+                        <source type="image/webp" srcset="./images/GOT.webp" />
+                        <source type="image/jpg" srcset="./images/GOT.jpg" />
+                        <img class="activator responsive-img" src="images/GOT.jpg">
+                </picture>
                 <a class="btn-floating fab pulse activator"><i class="fas fa-info-circle"></i></a>
-                </div>
+            
+            </div>
                 <div class="card-content">
                     <span class="card-title activator purple-text text-lighten-5">
                         Clicky GOT<i
@@ -196,9 +203,14 @@
             </div>
         </div>
         <div class="col s12 m12 l4">
+            <picture>
             <div class="card hoverable teal">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator responsive-img" src="./images/hike.jpg">
+                    <!-- <img class="activator responsive-img" src="./images/hike.jpg"> -->
+                        <source class="activator responsive-img" type="image/webp" srcset="./images/hike.webp" />
+                        <source type="image/jpg" srcset="./images/hike.jpg" />
+                        <img class="activator responsive-img" src="images/hike.jpg">
+                    </picture>
                     <a class="btn-floating fab pulse activator"><i class="fas fa-info-circle"></i></a>
                 </div>
                 <div class="card-content">
@@ -223,12 +235,22 @@
             </div>
         </div>
         <div class="col s12 m12 l4">
+            
+               
             <div class="card hoverable teal">
+                
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator responsive-img"
-                        src="./images/Meal.jpg">
+                    
+                    <!-- <img class="activator responsive-img"
+                        src="./images/Meal.jpg"> -->
+                        <picture id="pictureEl">
+                            <source type="image/webp" srcset="./images/Meal.webp" />
+                            <source type="image/jpg" srcset="./images/Meal.jpg" />
+                            <img class="activator responsive-img" src="images/Meal.jpg" >
+                        </picture>
                         <a class="btn-floating fab pulse activator"><i class="fas fa-info-circle"></i></a>
-                </div>
+                      
+                    </div>
                 <div class="card-content">
                     <span class="card-title activator purple-text text-lighten-5">My Next Meal<i
                             class="mdi-navigation-more-vert right"></i></span>

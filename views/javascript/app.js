@@ -69,3 +69,22 @@ document.addEventListener(
   },
   false
 )
+
+
+$(function () {
+  $('#pictureEl').click(
+   
+    function (e) {
+      let Elem = e.target;
+
+      $(Elem)
+        .find('> img.activator')
+        .click()
+     }
+    //  ,function () {
+    //   $(Elem)
+    //     .find('> .card-reveal > .card-title')
+    //     .click()
+    // }
+  )
+})
