@@ -43,8 +43,7 @@
                 </div>
             </div>
         </nav>
- 
-</div>
+ </div>
 
 <ul id="slide-out" class="sidenav">
 
@@ -111,7 +110,7 @@
 
                     <!-- <img class="square responsive-img" src="images/suit1.png"> -->
                     <picture>
-                        <source class="circle responsive-img" type="image/webp" srcset="./images/suit1.webp" />
+                        <source type="image/webp" srcset="./images/suit1.webp" />
                         <source type="image/png" srcset="./images/suit1.png" />
                         <img class="square responsive-img" src="images/suit1.png">
                     </picture>
@@ -629,8 +628,21 @@
             </div>
             
             <div class="carousel">
-                <a class="carousel-item responsive-img" href="#one!"><img src="./images/mongodb.jpg"></a>
-                <a class="carousel-item responsive-img" href="#two!"><img src="https://amandeepmittal.gallerycdn.vsassets.io/extensions/amandeepmittal/expressjs/2.0.0/1509881293872/Microsoft.VisualStudio.Services.Icons.Default"></a>
+                <a class="carousel-item" href="#one!">
+                    <!-- <img src="./images/mongodb.jpg"> -->
+                    <picture>
+                        <source type="image/webp" srcset="./images/mongodb.webp" />
+                        <source type="image/jpg" srcset="./images/mongodb.jpg" />
+                        <img class="responsive-img" src="images/mongodb.jpg">
+                    </picture>
+                </a>
+                <a class="carousel-item" href="#two!">
+                    <!-- <img src="https://amandeepmittal.gallerycdn.vsassets.io/extensions/amandeepmittal/expressjs/2.0.0/1509881293872/Microsoft.VisualStudio.Services.Icons.Default"> -->
+                <picture>
+                    <source type="image/webp" srcset="./images/express.webp" />
+                    <source type="image/png" srcset="./images/express.png" />
+                    <img class="responsive-img" src="images/express.png">
+                </picture></a>
                 <a class="carousel-item responsive-img" href="#three!"><img src="./images/react.png"></a>
                 <a class="carousel-item responsive-img" href="#four!"><img src="https://www.logolynx.com/images/logolynx/c5/c509c38cb89bcf556b2051222663f398.png"></a>
                 <a class="carousel-item responsive-img" href="#five!"><img src="./images/jquery.jpg"></a>
