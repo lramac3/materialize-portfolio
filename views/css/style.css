@@ -30,6 +30,14 @@ nav{
 }
 
 #work {
+    background-image: url("../images/work1.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+.no-webp #work {
     background-image: url("../images/work1.png");
     background-position: center;
     background-size: cover;
@@ -39,6 +47,15 @@ nav{
 }
 #skillsets {
     height: 100vh;
+    background-image: url("../images/skills.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+.no-webp #skillsets {
+    height: 100vh;
     background-image: url("../images/skills.png");
     background-position: center;
     background-size: cover;
@@ -47,6 +64,14 @@ nav{
     z-index: -1;
 }
 #contact {
+    background-image: url("../images/contact.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+.no-webp #contact {
     background-image: url("../images/contact.jpg");
     background-position: center;
     background-size: cover;
