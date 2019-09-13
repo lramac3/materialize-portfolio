@@ -184,7 +184,7 @@ input, textarea {
  }
 
  .verticalcenter {
-   display: table-cell;
+    display: table-cell;
     vertical-align: middle;
-    height: 100px;
+    height: 63px;
 }
