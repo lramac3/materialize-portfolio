@@ -190,3 +190,17 @@ input, textarea {
     padding-top: 9px;
     padding-bottom: 0.5px;
 }
+@-moz-document url-prefix() {
+ .brand-logo {
+ height: 100%;
+ display: block;
+ }
+
+ .verticalcenter {
+    display: table-cell;
+    vertical-align: middle;
+    height: 40px;
+    padding-top: 0.5px;
+    padding-bottom: 8px;
+}
+}
