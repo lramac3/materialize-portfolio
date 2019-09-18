@@ -12,15 +12,6 @@ body {
     background-attachment: fixed;
     z-index: -1;
 }
-.no-webp #landing {
-    height: 100vh;
-    background-image: url("../images/background.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    z-index: -1;
-}
 nav{
     background-color: rgb(0,3,12); 
     z-index: 100; 
@@ -36,26 +27,8 @@ nav{
     z-index: -1;
     /* margin-top: 50px; */
 }
-.no-webp #intro {
-    /* height: 100vh; */
-    background-image: url("../images/aboutme.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    z-index: -1;
-    /* margin-top: 50px; */
-}
 #work {
     background-image: url("../images/work1.webp");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    z-index: -1;
-}
-.no-webp #work {
-    background-image: url("../images/work1.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -71,25 +44,8 @@ nav{
     background-attachment: fixed;
     z-index: -1;
 }
-.no-webp #skillsets {
-    height: 100vh;
-    background-image: url("../images/skills.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    z-index: -1;
-}
 #contact {
     background-image: url("../images/contact.webp");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    z-index: -1;
-}
-.no-webp #contact {
-    background-image: url("../images/contact.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -122,11 +78,6 @@ input, textarea {
   /*Custom Text Color While Active*/
   background-color: rgba(38, 166, 154, 0.2);
   /*Custom Background Color While Active*/
-}
-
-.tabs .indicator {
-  background-color:#26a69a !important;
-  /*Custom Color Of Indicator*/
 }
 
 .tooltip .tooltiptext {
