@@ -60,6 +60,11 @@ $('.tooltip').click(function () {
   else $('.tooltiptext').show()
 })
 
+$('a[href="#profile"]').click(function () {
+  $('.tooltip').click()
+ })
+
+
 //   document.addEventListener(
 //     'touchstart',
 //     function addtouchclass (e) {
