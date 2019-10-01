@@ -23,7 +23,9 @@ document.addEventListener("DOMContentLoaded", function() {
   $(document).ready(function(){
     $('.sidenav').sidenav({
        draggable: true,
-      });
+       }).on('click tap', 'li a', () => {
+            $('.sidenav').sidenav('close');
+        });
  $('.carousel').carousel({
   
   numVisible: 5,
