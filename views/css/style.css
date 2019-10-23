@@ -177,6 +177,26 @@ input, textarea {
   visibility: visible;
 }
 
+/* .tooltip2:hover .tooltiptext1 {
+  visibility: visible;
+}
+
+.tooltip2 .tooltiptext1 {
+  visibility: hidden;
+  width: 100px;
+  background-color: darkblue;
+  color: #fff;
+  text-align: center;
+  border-radius: 25px;
+  padding: 1px 0; */
+
+  /* Position the tooltip */
+  /* position: absolute;
+  z-index: 1;
+  float: left;
+  left: 40%;
+} */
+
 #overflowTest {
   color: white;
   padding: 15px;
@@ -232,11 +252,84 @@ input, textarea {
     opacity: 0.8;
   } 
 
-// ADD BLINKING TEXT CLASS
+/* ADD BLINKING TEXT CLASS */
 .blinking {
   animation: blinker 0.5s linear infinite;
   
 }
 @keyframes blinker {  
   50% { opacity: 0; }
+}
+
+#sidenav-1 {
+  
+  height: auto;
+	width: 70px;
+	background-color: transparent;
+	bottom: 0;
+  left: 0 ;
+  border-right-style: none;
+ 
+}
+hr {   
+    transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    height: 100%;
+}
+
+#sidenav-2 {
+  
+  height: auto;
+	width: 70px;
+	background-color: transparent;
+	bottom: 0;
+  right: 0 ;
+  border-left-style: none;
+ 
+}
+/* .vl {
+  
+	height: 100%;
+    width: 1px;
+    border-left: .1px solid green;
+  } */
+
+  #sidenav-2 .rotate {
+ margin:0;
+-webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  /* float: right; */
+ color: white !important;
+  position: absolute;
+    top: 50%;
+   left: 50%;
+
+   -webkit-transform-origin: 5% 5%;
+  -moz-transform-origin: 5% 5%;
+  -ms-transform-origin: 5% 5%;
+  -o-transform-origin: 5% 5%;
+  transform-origin: 5% 5%;
+ 
+}
+
+.nav-down {
+    top: -70px;
+}
+
+header {
+ 
+  height: 100%;
+  position: fixed;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+}
+
+.small {
+line-height:100px;
 }

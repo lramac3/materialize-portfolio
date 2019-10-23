@@ -39,6 +39,9 @@ setInterval(() => {
 }, 2000);
 
 $('textarea#textarea2').characterCounter()
+$('#sidenav-1').sidenav({ edge: 'left' })
+$('#sidenav-2').sidenav({ edge: 'right' })
+
 });
 
 
@@ -103,3 +106,60 @@ document.addEventListener('DOMContentLoaded', function () {
     .delay(1700)
     .fadeOut()
 })
+
+let didScroll
+let st
+let isOverThreshold
+let lastScrollTop = 0
+let delta = 5
+let navbarHeight = $('header').outerHeight()
+
+$(window).scroll(function (event) {
+  didScroll = true
+  st = $(this).scrollTop()
+  if (st <= navbarHeight) {
+    isOverThreshold = false
+  } else {
+    isOverThreshold = true
+  }
+})
+
+setInterval(function () {
+  if (didScroll) {
+    hasScrolled()
+    didScroll = false
+  }
+}, 250)
+
+function hasScrolled () {
+  // Make sure they scroll more than delta
+  if (Math.abs(lastScrollTop - st) <= delta) return
+
+  // If they scrolled down and are past the navbar, add class .nav-up.
+  // This is necessary so you never see what is "behind" the navbar.
+  if (st > lastScrollTop && st > navbarHeight && isOverThreshold) {
+    // Scroll Down
+    hideMenuBar()
+  } else {
+    // Scroll Up
+    if (st + $(window).height() < $(document).height()) {
+      showMenuBar()
+    }
+  }
+
+  lastScrollTop = st
+}
+
+function hideMenuBar () {
+  $('header').animate({ top: '-70px' }, 100, 'swing')
+  $('header')
+    .removeClass('navbar-fixed')
+    .addClass('nav-down')
+}
+
+function showMenuBar () {
+  $('header').animate({ top: '0px' }, 100, 'swing')
+  $('header')
+    .removeClass('nav-down')
+    .addClass('navbar-fixed')
+}

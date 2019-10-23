@@ -18,7 +18,8 @@
 </head>
 
 <body>
-    <div class="navbar-fixed">
+    <header class="nav-down">
+    <div class="navbar navbar-fixed">
         <nav class="teal">
             <div class="container">
                 <div class="nav-wrapper">
@@ -38,9 +39,10 @@
                         <li><a href="#intro">About Me</a></li>
                         <li><a href="#work">Projects</a></li>
                         <li><a href="#skillsets">Skills</a></li>
-                        <li><a href="#profile">Profile</a></li>
+                        <!-- <li><a href="#profile">Profile</a></li> -->
                         <li><a href="#contact">Contact</a></li>
                     </ul>
+                    
                 </div>
             </div>
         </nav>
@@ -56,7 +58,45 @@
     <li><a href="#contact"><i class="fas fa-address-card"></i>Contact</a></li>
     <li><a class="sidenav-close" href="#!"><i class="fas fa-times-circle"></i>Exit</a></li>
 </ul>
+<ul id="sidenav-1" class="sidenav sidenav-fixed z-depth-0">
+    <!-- <div class="vl center-align"></div> -->
+    
+    <div class="fixed-action-btn vertical left-align">
+    <div id="profile" class="tooltip2">
+        <a class="btn-floating black darken-1 left-align" title = "My Github" href="https://github.com/lramac3" onclick="window.location.reload(true);"
+            target="_blank" rel="noopener noreferrer"><i class="fab fa-github "></i></a>
+            <br></br>
+            <a class="btn-floating light-blue darken-3" title="My LinkedIn" href="https://www.linkedin.com/in/linu-r/"
+                onclick="window.location.reload(true);" target="_blank" rel="noopener noreferrer"><i
+                    class="fab fa-linkedin"></i></a>
+                    <br></br>
+                    <a class="btn-floating brown darken-1" title="My Resume" href="https://1drv.ms/b/s!Aq8AK82a0q0PgRyLYxe11cGsMGgB"
+                        onclick="window.location.reload(true);" target="_blank" rel="noopener noreferrer"> <i class="fas fa-file-pdf"></i>
+                    </a>
+                        
+                                    <span style="display:block; height: 270px;"></span>
 
+<!-- <hr style="width:35px; " class="vertical" /> -->
+       
+    </div>
+    </div>
+</ul>
+<ul id="sidenav-2" class="sidenav sidenav-fixed z-depth-0 right-align">
+    <!-- <div class="vl center-align"></div> -->
+
+    <div class="fixed-action-btn vertical right-align">
+        <div id="profile" class="tooltip3">
+<li><a class="rotate z-depth-0" title="My Email" href="mailto:linuram@gmail.com" onclick="window.location.reload(true);"
+                target="_blank" rel="noopener noreferrer">linuram@gmail.com</a></li>
+            
+<span style="display:block; height: 860px;"></span>
+
+
+<!-- <hr style="width:30px; " class="vertical" /> -->
+    </div>
+    </div>
+    </ul>
+    </header>
     <div class="section responsive-img" id="landing">
         <h5 id="mainText" class="center">Hello! I'm</h5>
         <h3 style="color: white;" class="center">
@@ -67,7 +107,7 @@
 
 
 
-    <div class="fixed-action-btn vertical">
+    <div class="fixed-action-btn vertical hide-on-large-only">
         <div id="profile" class="tooltip"><a id="icon"
             class="btn-floating waves-effect click-to-toggle scale-transition scale-out btn-large teal">
             <i class="fa fa-globe right"></i>
@@ -713,27 +753,31 @@
             <h3>Have a question or want to work together?</h3>
         </span>
         <div class="row">
-
-            <div class="input-field col s6">
+<div class="input-field col s3"></div>
+            <div class="input-field col s3">
                 <i class="material-icons prefix">account_circle</i>
                 <input id="first_name" type="text" required pattern="[a-zA-Z]+(\s[a-zA-Z]*){0,2}" minlength="4" maxlength="20"
                     aria-required="true">
                 <label for="first_name"> Name</label>
                 <span class="helper-text silver" data-error="Please enter a valid name"></span>
             </div>
-        <div class="input-field col s6">
+        <div class="input-field col s3">
             <i class="material-icons prefix">email</i>
                 <input id="email" type="email" required pattern="^\w+([.-]?\w+)*@\w+([.-]?\w+)*(.\w{2,3})+$"
                     aria-required="true">
                 <label for="email">Email</label>
                 <span class="helper-text silver" data-error="Email Format: jdoe123@gmail.com"></span>
             </div>
-            <div class="input-field col s12">
+            <div class="input-field col s3"></div>
+
+            <div class="input-field col s4"></div>
+            <div class="input-field col s4">
                 <i class="material-icons prefix">subject</i>
                 <input id="subject" type="text" required pattern="[a-zA-Z0-9]+(\s[a-zA-Z]*){0,2}" minlength="4" maxlength="20" aria-required="true">
                 <label for="subject">Subject</label>
                 <span class="helper-text silver" data-error="Please enter a subject"></span>
             </div>
+            <div class="input-field col s4"></div>
             <!-- <div class="input-field col s6">
                 <input id="phone_number" type="tel" class="validate" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                     aria-required="true">
