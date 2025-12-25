@@ -297,24 +297,17 @@ hr {
   } */
 
   #sidenav-2 .rotate {
- margin:0;
--webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  /* float: right; */
- color: white !important;
-  position: absolute;
-    top: 50%;
-   left: 50%;
+  margin: 0;
+  color: white !important;
 
-   -webkit-transform-origin: 5% 5%;
-  -moz-transform-origin: 5% 5%;
-  -ms-transform-origin: 5% 5%;
-  -o-transform-origin: 5% 5%;
-  transform-origin: 5% 5%;
- 
+  /* center reliably inside the 70px bar */
+  position: fixed;          /* or absolute if you prefer, but fixed works great here */
+  right: 10px;              /* controls distance from right edge */
+  bottom: 120px;            /* controls vertical position */
+  transform: rotate(90deg);
+  transform-origin: right bottom;
+
+  white-space: nowrap;      /* prevents wrapping */
 }
 
 .nav-down {
