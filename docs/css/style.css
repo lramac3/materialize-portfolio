@@ -1,0 +1,331 @@
+body {
+    background-color: silver;
+    color: rgba(255,255,255,0.8);
+}
+
+#landing {
+    height: 100vh;
+    background-image: url("../images/background.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+.no-webp #landing {
+    height: 100vh;
+    background-image: url("../images/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+nav{
+    background-color: rgb(0,3,12); 
+    z-index: 100; 
+}
+
+#intro {
+    /* height: 100vh; */
+    padding-top: 70px;
+    background-image: url("../images/aboutme.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+    /* margin-top: 50px; */
+}
+.no-webp #intro {
+    /* height: 100vh; */
+    padding-top: 70px;
+    background-image: url("../images/aboutme.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+    /* margin-top: 50px; */
+}
+#work {
+    padding-top: 70px;
+    background-image: url("../images/work1.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+.no-webp #work {
+    padding-top: 70px;
+    background-image: url("../images/work1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+#skillsets {
+    padding-top: 70px;
+    height: 100vh;
+    background-image: url("../images/skills.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+.no-webp #skillsets {
+    padding-top: 70px;
+    height: 100vh;
+    background-image: url("../images/skills.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+#contact {
+    padding-top: 100px;
+    background-image: url("../images/contact.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+.no-webp #contact {
+    padding-top: 100px;
+    background-image: url("../images/contact.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+#mainText {
+    margin-top: 30vh;
+	color:white;
+}
+
+input, textarea {
+	color: white;
+}
+
+/* The best way to add custom CSS to Materialize 1.0.0 default tabs is the following: */
+
+.tabs .tab a {
+  color: rgba(38, 166, 154, 0.7);
+  /*Custom Text Color*/
+}
+
+.tabs .tab a:hover {
+  color:#26a69a !important;
+  /*Custom Color On Hover*/
+}
+
+.tabs .tab a:focus.active {
+  color:#26a69a !important;
+  /*Custom Text Color While Active*/
+  background-color: rgba(38, 166, 154, 0.2);
+  /*Custom Background Color While Active*/
+}
+
+.tabs .indicator {
+  background-color:#26a69a !important;
+  /*Custom Color Of Indicator*/
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: darkblue;
+  color: #fff;
+  text-align: center;
+  border-radius: 25px;
+  padding: 1px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  float: left;
+  right: 110%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip1 .tooltiptext1 {
+  visibility: hidden;
+  width: 100px;
+  background-color: darkblue;
+  color: #fff;
+  text-align: center;
+  border-radius: 25px;
+  padding: 1px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  float: left;
+  right: 110%;
+}
+
+.tooltip1:hover .tooltiptext1 {
+  visibility: visible;
+}
+
+/* .tooltip2:hover .tooltiptext1 {
+  visibility: visible;
+}
+
+.tooltip2 .tooltiptext1 {
+  visibility: hidden;
+  width: 100px;
+  background-color: darkblue;
+  color: #fff;
+  text-align: center;
+  border-radius: 25px;
+  padding: 1px 0; */
+
+  /* Position the tooltip */
+  /* position: absolute;
+  z-index: 1;
+  float: left;
+  left: 40%;
+} */
+
+#overflowTest {
+  color: white;
+  padding: 15px;
+  width: 95%;
+  height: 260px;
+  overflow: scroll;
+  /* border: 1px solid #ccc; */
+}
+
+.brand-logo {
+ height: 1%;
+ display: inline-block;
+ }
+
+ .verticalcenter {
+    display: table-cell;
+    vertical-align: middle;
+    height: 50px;
+    padding-top: 9px;
+    padding-bottom: 0.5px;
+}
+@-moz-document url-prefix() {
+ .brand-logo {
+ height: 100%;
+ display: block;
+ }
+
+ .verticalcenter {
+    display: table-cell;
+    vertical-align: middle;
+    height: 40px;
+    padding-top: 0.5px;
+    padding-bottom: 8px;
+}
+}
+
+.preloader-background {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #eee;
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+  
+}
+.preloader-background p {
+    padding-top:120px;
+    margin-left: -60px;
+    opacity: 0.8;
+  } 
+
+/* ADD BLINKING TEXT CLASS */
+.blinking {
+  animation: blinker 0.5s linear infinite;
+  
+}
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+
+#sidenav-1 {
+  
+  height: auto;
+	width: 70px;
+	background-color: transparent;
+	bottom: 0;
+  left: 0 ;
+  border-right-style: none;
+ 
+}
+hr {   
+    transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    height: 100%;
+}
+
+#sidenav-2 {
+  
+  height: auto;
+	width: 70px;
+	background-color: transparent;
+	bottom: 0;
+  right: 0 ;
+  border-left-style: none;
+ 
+}
+/* .vl {
+  
+	height: 100%;
+    width: 1px;
+    border-left: .1px solid green;
+  } */
+
+  #sidenav-2 .rotate {
+ margin:0;
+-webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  /* float: right; */
+ color: white !important;
+  position: absolute;
+    top: 50%;
+   left: 50%;
+
+   -webkit-transform-origin: 5% 5%;
+  -moz-transform-origin: 5% 5%;
+  -ms-transform-origin: 5% 5%;
+  -o-transform-origin: 5% 5%;
+  transform-origin: 5% 5%;
+ 
+}
+
+.nav-down {
+    top: -70px;
+}
+
+header {
+ 
+  height: 100%;
+  position: fixed;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+}
