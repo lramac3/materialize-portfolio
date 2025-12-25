@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Linu Ramachandran</title>
+</head>
+
+<body>
+    <header class="nav-down">
+    <div class="navbar navbar-fixed">
+        <nav class="teal">
+            <div class="container">
+                <div class="nav-wrapper">
+                   
+                    <a href="#" class="brand-logo left responsive-img">
+                        <!-- <img src="images/logo5.png">  -->
+                        <picture>
+                            <source type="image/webp" srcset="images/logo5.webp" />
+                            <source type="image/png" srcset="images/logo5.png" />
+                            <img class="verticalcenter" src="images/logo5.png" alt="">
+                        </picture>
+                    </a>
+                <!-- <h5 >Linu Ramachandran</h5> -->
+                    <a href="#" data-target="slide-out" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down" id="navList">
+                        <li><a href="#landing">Home</a></li>
+                        <li><a href="#intro">About Me</a></li>
+                        <li><a href="#work">Projects</a></li>
+                        <li><a href="#skillsets">Skills</a></li>
+                        <!-- <li><a href="#profile">Profile</a></li> -->
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+ </div>
+</header>
+<ul id="slide-out" class="sidenav">
+
+    <li><a href="#landing"><i class="fas fa-home"></i>Home</a></li>
+    <li><a href="#intro"> <i class="fas fa-user-circle"></i>About Me</a></li>
+    <li><a href="#work"><i class="fas fa-project-diagram"></i>Projects</a></li>
+    <li><a href="#skillsets"><i class="fas fa-tools"></i>Skills</a></li>
+    <li><a href="#profile"><i class="fas fa-user-circle"></i>Profile</a></li>
+    <li><a href="#contact"><i class="fas fa-address-card"></i>Contact</a></li>
+    <li><a class="sidenav-close" href="#!"><i class="fas fa-times-circle"></i>Exit</a></li>
+</ul>
+<ul id="sidenav-1" class="sidenav sidenav-fixed z-depth-0">
+    <!-- <div class="vl center-align"></div> -->
+    
+    <div class="fixed-action-btn vertical left-align">
+    <div id="profile" class="tooltip2">
+        <a class="btn-floating black darken-1 left-align" title = "My Github" href="https://github.com/lramac3" onclick="window.location.reload(true);"
+            target="_blank" rel="noopener noreferrer"><i class="fab fa-github "></i></a>
+            <br><br>
+            <a class="btn-floating light-blue darken-3" title="My LinkedIn" href="https://www.linkedin.com/in/linu-r/"
+                onclick="window.location.reload(true);" target="_blank" rel="noopener noreferrer"><i
+                    class="fab fa-linkedin"></i></a>
+                    <br><br>
+                    <a class="btn-floating brown darken-1" title="My Resume" href="https://1drv.ms/b/s!Aq8AK82a0q0PgSFu1PZz9v60jMn2"
+                        onclick="window.location.reload(true);" target="_blank" rel="noopener noreferrer"> <i class="fas fa-file-pdf"></i>
+                    </a>
+                        
+                                    <span style="display:block; height: 240px;"></span>
+
+<!-- <hr style="width:35px; " class="vertical" /> -->
+       
+    </div>
+    </div>
+</ul>
+<ul id="sidenav-2" class="sidenav sidenav-fixed z-depth-0 right-align">
+    <!-- <div class="vl center-align"></div> -->
+
+    <div class="fixed-action-btn vertical right-align">
+        <div id="profile" class="tooltip3">
+<li><a class="rotate z-depth-0" title="My Email" href="mailto:linuram@gmail.com" onclick="window.location.reload(true);"
+                target="_blank" rel="noopener noreferrer">linuram@gmail.com</a></li>
+            
+<span style="display:block; height: 790px;"></span>
+
+
+<!-- <hr style="width:30px; " class="vertical" /> -->
+    </div>
+    </div>
+    </ul>
+
+    <div class="section responsive-img" id="landing">
+        <h5 id="mainText" class="center">Hello! I'm</h5>
+        <h3 style="color: white;" class="center">
+           Linu <b>Ramachandran</b>
+        </h3>
+        <h6 id="mainText" class="center">Software QA Engineer, Web Designer & Full-Stack Web Developer</h6>
+    </div>
+
+
+
+    <div class="fixed-action-btn vertical hide-on-large-only">
+        <div id="profile" class="tooltip"><a id="icon"
+            class="btn-floating waves-effect click-to-toggle scale-transition scale-out btn-large teal">
+            <i class="fa fa-globe right"></i>
+        </a><span class="tooltiptext">
+            My Profile
+        </span></div>
+        <ul>
+            <div class="tooltip1"><li><a class="btn-floating black darken-4" href="https://github.com/lramac3" onclick="window.location.reload(true);" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-github"></i></a><span class="tooltiptext1">
+                            My Github
+                        </span></li></div>
+            <div class="tooltip1"><li><a class="btn-floating light-blue darken-3" href="https://www.linkedin.com/in/linu-r/"
+                    onclick="window.location.reload(true);" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a><span class="tooltiptext1">
+                        My LinkedIn
+                    </span></li></div>
+            <div class="tooltip1"><li><a class="btn-floating brown darken-1" href="https://1drv.ms/b/s!Aq8AK82a0q0PgRyLYxe11cGsMGgB"
+                    onclick="window.location.reload(true);" target="_blank" rel="noopener noreferrer"> <i class="fas fa-file-pdf"></i>
+                </a><span class="tooltiptext1">
+                    My Resume
+                </span></li></div>
+                    
+            <div class="tooltip1"><li><a class="btn-floating red lighten-1" href="mailto:linuram@protonmail.ch" onclick="window.location.reload(true);" target="_blank" rel="noopener noreferrer"> <i
+                    class="fas fa-envelope"></i>
+                    </a><span class="tooltiptext1">
+                        Email Me
+                    </span></li></div>
+                    
+        </ul>
+    </div>
+
+    <div id="intro" class="section grey lighten-1">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h4 class="center header"> "Accept responsibility for anything around you so you'll have the motivation to change what you don't like"</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 center m7 l6">
+                <!-- <div class="col s7 push-s5"> -->
+                <!-- <div class="col s12 m12 l3"> -->
+
+                    <!-- <img class="square responsive-img" src="images/suit1.png"> -->
+                    <picture>
+                        <source type="image/webp" srcset="images/suit1.webp" />
+                        <source type="image/png" srcset="images/suit1.png" />
+                        <img class="square responsive-img" src="images/suit1.png" alt="">
+                    </picture>
+                </div>
+                <div class= "col s12 center offset-m1 m4 offset-l1 l5">
+                <!-- <div class="col s5 pull-s7"> -->
+                    <!-- <div class="col s12 m12 offset-l1 l8 "> -->
+                        
+                    <h3 class="center"> <b>ABOUT ME</b></h3>
+                    <div id="overflowTest"> 
+                        <!-- <span class="flow-text"> -->
+                    <p>I am a Software QA Engineer and Full-Stack Web Developer based in Atlanta, Georgia. As a web developer, I enjoy using my obsessive attention to detail, my unequivocal love for making things, and my mission-driven work ethic to make a difference in the world. My hobbies include playing ping pong, chess, and reading the latest news in the tech world. Technology has the ability to impact lives at a level and scale that has never been realized in the history of mankind.
+                        The idea that something I create can impact someone across the world now, or in the future is what drives my passion for technology. I love to travel because not only is it the ultimate adventure but it also exposes you to new types of people, different ways of living, and opens up your mind.
+                        <br>
+                    </p>
+                    <!-- </span> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="p1" class="parallax-container responsive-img">
+        <div class="parallax responsive-img" >
+            <!-- <img src="images/bg.jpg"> -->
+            <picture>
+                <source type="image/webp" srcset="images/bg.webp" />
+                <source type="image/jpg" srcset="images/bg.jpg" />
+                <img src="images/bg.jpg" alt="">
+            </picture>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 center white-text">
+                    <br><br><br><br><br><br>
+                    <h3>Fast load times, smooth interaction, responsive UI, and a simple interface are my specialities
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="section responsive-img grey lighten-1" style="background-color: grey lighten-1;" id="work">
+    <div class="container">
+        <h3 class="header text_b center">My Projects </h3>
+<div class="row">
+    <div class="col s12">
+        <ul class="tabs transparent" materialize="tabs">
+            <li class="tab col s3"><a href="#test1" class="teal-text">Front-end</a></li>
+            <li class="tab col s3"><a class="teal-text" href="#test2">Back-end</a></li>
+            <!-- <li class="tab col s3 disabled"><a href="#test3">Disabled Tab</a></li> -->
+            <li class="tab col s3"><a href="#test4" class="active teal-text">Full-stack</a></li>
+        <!-- <div class="indicator teal" style="z-index:1"></div> -->
+        </ul>
+    </div>
+    <div id="test1" class="col s12 cards-container"><div class="row">
+        <div class="col s12 m12 l4">
+            <div class="card hoverable teal ">
+                <div class="card-image waves-effect waves-block waves-light">
+                   <!-- <img class="activator responsive-img" src="images/GOT.jpg"> -->
+                <picture id="pictureEl">
+                        <source type="image/webp" srcset="images/GOT.webp" />
+                        <source type="image/jpg" srcset="images/GOT.jpg" />
+                        <img class="activator responsive-img" src="images/GOT.jpg" alt="">
+                </picture>
+                <a class="btn-floating fab pulse activator"><i class="fas fa-info-circle"></i></a>
+            
+            </div>
+                <div class="card-content">
+                    <span class="card-title activator purple-text text-lighten-5">
+                        Clicky GOT<i
+                            class="mdi-navigation-more-vert right"></i>
+                        </span>
+                    <p><a class="purple-text text-lighten-5" href="https://lramac3.github.io/Clicky-Game/"
+                            target="_blank" rel="noopener noreferrer"><i class="tiny material-icons">visibility</i> Project</a></p>
+                    <p><a class="purple-text text-lighten-5" href="https://github.com/lramac3/Clicky-Game.git"
+                            target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Github</a></p>
+                </div>
+                <div class="card-reveal teal">
+                    <span class="card-title purple-text text-lighten-5">Clicky GOT<i
+                            class="mdi-navigation-close right">x</i></span>
+                    <p>Welcome to Clicky Game of Thrones! Clicky game is a react application wherein user can click on GOT character cards to score points. But, user can only
+                    click on a character's card once. If the user clicks on the same character's card more than once, the game ends. The
+                    game keeps track of the highest score of the current session. If user scores 18 without any repeats, user wins and the
+                    game resets.</p>
+                    <p>Technologies utilized: React.js, Bootstrap</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m12 l4">
+            <div class="card hoverable teal">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <!-- <img class="activator responsive-img" src="images/hike.jpg"> -->
+                    <picture id="pictureEl">
+                        <source type="image/webp" srcset="images/hike.webp" />
+                        <source type="image/jpg" srcset="images/hike.jpg" />
+                        <img class="activator responsive-img" src="images/hike.jpg" alt="">
+                    </picture>
+                    <a class="btn-floating fab pulse activator"><i class="fas fa-info-circle"></i></a>
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator purple-text text-lighten-5">Rally<i
+                            class="mdi-navigation-more-vert right"></i></span>
+                    <p><a class="purple-text text-lighten-5" href="https://boiling-fortress-49835.herokuapp.com/"
+                            target="_blank" rel="noopener noreferrer"><i class="tiny material-icons">visibility</i> Project
+                            </a></p>
+                    <p><a class="purple-text text-lighten-5" href="https://github.com/lramac3/Rally"
+                            target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Github</a></p>
+                </div>
+                <div class="card-reveal teal">
+                    <span class="card-title purple-text text-lighten-5">Rally<i
+                            class="mdi-navigation-close right">x</i></span>
+                    <p>Welcome to Rally! This is a social media website that's meant to bring people together.
+                        Using Rally you can create events that you or a group may be hosting. Once created, your
+                        event can be seen by the world. Anyone can choose to join your event to get details
+                        about location, time, who's participating, and any other details you include about it.
+                        Rally on!</p>
+                        <p>Technologies utilized: MaterializeCSS</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m12 l4">
+            
+               
+            <div class="card hoverable teal">
+                
+                <div class="card-image waves-effect waves-block waves-light">
+                    
+                    <!-- <img class="activator responsive-img"
+                        src="images/Meal.jpg"> -->
+                        <picture id="pictureEl">
+                            <source type="image/webp" srcset="images/Meal.webp" />
+                            <source type="image/jpg" srcset="images/Meal.jpg" />
+                            <img class="activator responsive-img" src="images/Meal.jpg" alt="">
+                        </picture>
+                        <a class="btn-floating fab pulse activator"><i class="fas fa-info-circle"></i></a>
+                      
+                    </div>
+                <div class="card-content">
+                    <span class="card-title activator purple-text text-lighten-5">My Next Meal<i
+                            class="mdi-navigation-more-vert right"></i></span>
+                    <p><a class="purple-text text-lighten-5" href="https://lramac3.github.io/My-Next-Meal/" target="_blank" rel="noopener noreferrer"><i
+                                class="tiny material-icons">visibility</i> Project
+                        </a></p>
+                    <p><a class="purple-text text-lighten-5" href="https://github.com/lramac3/My-Next-Meal" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-github"></i> Github</a></p>
+                </div>
+                <div class="card-reveal teal">
+                    <span class="card-title purple-text text-lighten-5">My Next Meal<i
+                            class="mdi-navigation-close right">x</i></span>
+                    <p>An application that offers healthy recipes for the on the go, sort on time indivdual.</p>
+                <p>Technologies utilized: Bootstrap, Javascript, Firebase</p>
+                </div>
+            </div>
+        </div>
+<div class="col s12 m12 l4">
+    <div class="card hoverable teal">
+        <div class="card-image waves-effect waves-block waves-light">
+            <!-- <img class="activator responsive-img" src="images/RPS.jpg"> -->
+            <picture id="pictureEl">
+                <source type="image/webp" srcset="images/RPS.webp" />
+                <source type="image/jpg" srcset="images/RPS.jpg" />
+                <img class="activator responsive-img" src="images/RPS.jpg" alt="">
+            </picture>
+            <a class="btn-floating fab pulse activator"><i class="fas fa-info-circle"></i></a>
+        </div>
+        <div class="card-content">
+            <span class="card-title activator purple-text text-lighten-5">Rock Paper Scissors<i
+                    class="mdi-navigation-more-vert right"></i></span>
+            <p><a class="purple-text text-lighten-5" href="https://lramac3.github.io/RPS-Multiplayer/" target="_blank" rel="noopener noreferrer"><i
+                        class="tiny material-icons">visibility</i> Project
+                </a></p>
+            <p><a class="purple-text text-lighten-5" href="https://github.com/lramac3/RPS-Multiplayer" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-github"></i> Github</a></p>
+        </div>
+        <div class="card-reveal teal">
+            <span class="card-title purple-text text-lighten-5">Rock Paper Scissors<i
+                    class="mdi-navigation-close right">x</i></span>
+            <p>The main goal of this project was to create the game rock, paper, scissors, using the Firebase database. This game is a
+            multiplayer game, that keeps track of user's inputs and displays them across any browser that has the page open.</p>
+            <p>Technologies utilized: Bootstrap, Javascript, Firebase</p>
+        </div>
+    </div>
+</div>
+<div class="col s12 m12 l4">
+    <div class="card hoverable teal">
+        <div class="card-image waves-effect waves-block waves-light">
+            <!-- <img class="activator responsive-img" src="images/SW-RPG.jpg"> -->
+            <picture id="pictureEl">
+                <source type="image/webp" srcset="images/SW-RPG.webp" />
+                <source type="image/jpg" srcset="images/SW-RPG.jpg" />
+                <img class="activator responsive-img" src="images/SW-RPG.jpg" alt="">
+            </picture>
+            <a class="btn-floating fab pulse activator"><i class="fas fa-info-circle"></i></a>
+        </div>
+        <div class="card-content">
+            <span class="card-title activator purple-text text-lighten-5">Star Wars RPG<i
+                    class="mdi-navigation-more-vert right"></i></span>
+            <p><a class="purple-text text-lighten-5" href="https://lramac3.github.io/Star-Wars-RPG/"
+                    target="_blank" rel="noopener noreferrer"><i class="tiny material-icons">visibility</i> Project
+                </a></p>
+            <p><a class="purple-text text-lighten-5" href="https://github.com/lramac3/Star-Wars-RPG.git"
+                    target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Github</a></p>
+        </div>
+        <div class="card-reveal teal">
+            <span class="card-title purple-text text-lighten-5">Star Wars RPG<i
+                    class="mdi-navigation-close right">x</i></span>
+            <p>Select the character that you want to play as.
+            Each character has a given base attack power. Every time you attack an opponent, your attack power increases by your
+            base attack power (e.g. if your base attack power is 5, your first attack will inflict 5 damage, your second attack 10,
+            and so on).
+            After you attack, your opponent will counter-attack you. Each opponent has a different given counter-attack power.
+            Counter-attack power does not increase.
+            No player can heal throughout the game.
+            Beat three opponents in any order you want, one at a time, to win the game. Choose wisely to build up your attack
+            power!
+            If you die, you lose!
+</p>
+            <p>Technologies utilized: Bootstrap, jQuery</p>
+        </div>
+    </div>
+</div>
+
+    </div></div>
+    <div id="test2" class="col s12 cards-container">
+        <div class="row">
+            <div class="col s12 m12 l4">
+                <div class="card hoverable teal">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <!-- <img class="activator responsive-img" src="images/Bamazon.png"> -->
+                        <picture id="pictureEl">
+                            <source type="image/webp" srcset="images/Bamazon.webp" />
+                            <source type="image/png" srcset="images/Bamazon.png" />
+                            <img class="activator responsive-img" src="images/Bamazon.png" alt="">
+                        </picture>
+                        <a class="btn-floating fab pulse activator"><i class="fas fa-info-circle"></i></a>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator purple-text text-lighten-5">Bamazon CLI<i
+                                class="mdi-navigation-more-vert right"></i></span>
+                        <p><a class="purple-text text-lighten-5" href="https://www.npmjs.com/package/bamazon-cli"
+                                target="_blank" rel="noopener noreferrer"><i class="tiny material-icons">visibility</i> Project</a></p>
+                        <p><a class="purple-text text-lighten-5" href="https://github.com/lramac3/bamazon"
+                                target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Github</a></p>
+                    </div>
+                    <div class="card-reveal teal">
+                        <span class="card-title purple-text text-lighten-5">Bamazon CLI<i
+                                class="mdi-navigation-close right">x</i></span>
+                        <p>Find everything you need at Bamazon! Bamazon, the node cli shopping app is an interactive app which allows the users to
+                        purchase items as a customer, view, track and update the product inventory as a manager, and track the total sales by
+                        department as a supervisor.</p>
+                        <p>Technologies utilized: Node.js
+</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m12 l4">
+                <div class="card hoverable teal">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <!-- <img class="activator responsive-img" src="images/word-guess.jpg"> -->
+                        <picture id="pictureEl">
+                            <source type="image/webp" srcset="images/word-guess.webp" />
+                            <source type="image/jpg" srcset="images/word-guess.jpg" />
+                            <img class="activator responsive-img" src="images/word-guess.jpg" alt="">
+                        </picture>
+                        <a class="btn-floating fab pulse activator"><i class="fas fa-info-circle"></i></a>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator purple-text text-lighten-5">Word Guess CLI<i
+                                class="mdi-navigation-more-vert right"></i></span>
+                        <p><a class="purple-text text-lighten-5" href="https://www.npmjs.com/package/hangman-app"
+                                target="_blank" rel="noopener noreferrer"><i class="tiny material-icons">visibility</i> Project
+                            </a></p>
+                        <p><a class="purple-text text-lighten-5" href="https://github.com/lramac3/Word-Guess-CLI" target="_blank" rel="noopener noreferrer"><i
+                                    class="fab fa-github"></i> Github</a></p>
+                    </div>
+                    <div class="card-reveal teal">
+                        <span class="card-title purple-text text-lighten-5">Word Guess CLI<i
+                                class="mdi-navigation-close right">x</i></span>
+                        <p>Hangman is a word guess command-line game. It is inspired by the classic word game in which you must guess as many
+                        secret words as you can before time runs out! Challenge your friends and learn new words.</p>
+                        <p>Technologies utilized: Node.js</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m12 l4">
+                <div class="card hoverable teal">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <!-- <img class="activator responsive-img"src="images/mgf.jpg"> -->
+                        <picture id="pictureEl">
+                            <source type="image/webp" srcset="images/mgf.webp" />
+                            <source type="image/jpg" srcset="images/mgf.jpg" />
+                            <img class="activator responsive-img" src="images/mgf.jpg" alt="">
+                        </picture>
+                            <a class="btn-floating fab pulse activator"><i class="fas fa-info-circle"></i></a>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator purple-text text-lighten-5">LIRI Bot<i
+                                class="mdi-navigation-more-vert right"></i></span>
+                        <p><a class="purple-text text-lighten-5" href="https://www.npmjs.com/package/liri-node-app1" target="_blank" rel="noopener noreferrer"><i
+                                    class="tiny material-icons">visibility</i> Project
+                            </a></p>
+                        <p><a class="purple-text text-lighten-5" href="https://github.com/lramac3/liri-node-app" target="_blank" rel="noopener noreferrer"><i
+                                    class="fab fa-github"></i> Github</a></p>
+                    </div>
+                    <div class="card-reveal teal">
+                        <span class="card-title purple-text text-lighten-5">Liri Bot<i
+                                class="mdi-navigation-close right">x</i></span>
+                        <p>LIRI is a Language Interpretation and Recognition Interface. LIRI takes the user's command line input to look up movie
+                        info, song info, concert info, or follow written instructions from a text file.</p>
+                        <p>Technologies utilized: Node.js, Axios</p>
+                    </div>
+                </div>
+            </div>
+<div class="col s12 m12 l4">
+    <div class="card hoverable teal">
+        <div class="card-image waves-effect waves-block waves-light">
+            <!-- <img class="activator responsive-img" src="images/friend.jpg"> -->
+                <picture id="pictureEl">
+                    <source type="image/webp" srcset="images/friend.webp" />
+                    <source type="image/jpg" srcset="images/friend.jpg" />
+                    <img class="activator responsive-img" src="images/friend.jpg" alt="">
+                </picture>
+           <a class="btn-floating fab pulse activator"><i class="fas fa-info-circle"></i></a>
+        </div>
+        <div class="card-content">
+            <span class="card-title activator purple-text text-lighten-5">Friend Finder<i
+                    class="mdi-navigation-more-vert right"></i></span>
+            <p><a class="purple-text text-lighten-5" href="https://friend-finder-fsfs.herokuapp.com/"
+                    target="_blank" rel="noopener noreferrer"><i class="tiny material-icons">visibility</i> Project
+                </a></p>
+            <p><a class="purple-text text-lighten-5" href="https://github.com/lramac3/FriendFinder" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-github"></i> Github</a></p>
+        </div>
+        <div class="card-reveal teal">
+            <span class="card-title purple-text text-lighten-5">Friend Finder<i
+                    class="mdi-navigation-close right">x</i></span>
+            <p>Friend Finder implements friend matching based on the user's responses to a ten-question survey. The user responds to
+            questions with values from 1 (Strongly Disagree) to 5 (Strongly Agree). The app then takes the scores of the recently
+            completed survey and compares them to every other friend already in the data and returns the one with the lowest
+            difference in score. In other words, it returns the friend with the most answers in common.Users can also access all
+            friends by looking at API Friends List for JSON object of all friends.</p>
+            <p>Technologies utilized: Node.js, Express</p>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+    <!-- <div id="test3" class="col s12">Test 3</div> -->
+    <div id="test4" class="col s12 cards-container"><div class="row">
+        <div class="col s12 m12 l4">
+            <div class="card hoverable teal">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <!-- <img class="activator responsive-img" src="images/Between.jpg"> -->
+                        <picture id="pictureEl">
+                            <source type="image/webp" srcset="images/Between.webp" />
+                            <source type="image/jpg" srcset="images/Between.jpg" />
+                            <img class="activator responsive-img" src="images/Between.jpg" alt="">
+                        </picture>
+                    <a class="btn-floating fab pulse activator"><i class="fas fa-info-circle"></i></a>
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator purple-text text-lighten-5">Betwixt<i
+                            class="mdi-navigation-more-vert right"></i></span>
+                    <p><a class="purple-text text-lighten-5" href="https://betwixt-gt.herokuapp.com/"
+                            target="_blank" rel="noopener noreferrer"><i class="tiny material-icons">visibility</i> Project</a></p>
+                    <p><a class="purple-text text-lighten-5" href="https://github.com/lramac3/Betwixt.git"
+                            target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Github</a></p>
+                </div>
+                <div class="card-reveal teal">
+                    <span class="card-title purple-text text-lighten-5">Betwixt<i
+                            class="mdi-navigation-close right">x</i></span>
+                    <p>Welcome to Betwixt! This app searches midpoint between two locations for points of interest. User can check the weather and chat with other users once signed in.</p>
+                    <p>Technologies utilized: Material UI, Node.js, React.js, Express.js, Google API, MongoDB, Auth0, Pusher</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m12 l4">
+            <div class="card hoverable teal">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <!-- <img class="activator responsive-img" src="images/Books.jpg"> -->
+                        <picture id="pictureEl">
+                            <source type="image/webp" srcset="images/Books.webp" />
+                            <source type="image/jpg" srcset="images/Books.jpg" />
+                            <img class="activator responsive-img" src="images/Books.jpg" alt="">
+                        </picture>
+                   <a class="btn-floating fab pulse activator"><i class="fas fa-info-circle"></i></a>
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator purple-text text-lighten-5">Books Search<i
+                            class="mdi-navigation-more-vert right"></i></span>
+                    <p><a class="purple-text text-lighten-5" href="https://mern-stack-lr.herokuapp.com/"
+                            target="_blank" rel="noopener noreferrer"><i class="tiny material-icons">visibility</i> Project
+                        </a></p>
+                    <p><a class="purple-text text-lighten-5" href="https://github.com/lramac3/google-books-app.git" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-github"></i> Github</a></p>
+                </div>
+                <div class="card-reveal teal">
+                    <span class="card-title purple-text text-lighten-5">Books Search<i
+                            class="mdi-navigation-close right">x</i></span>
+                    <p>Welcome to Google Books Search app! This is a React-based Google Books Search app that allows users to search for books via the Google Books API. Users have
+                    the option to "View" a book, bringing them to the book on Google Books, or "Save" a book, saving it to the Mongo
+                    database. Users also have the option to "View" the book from the saved page, bringing them to the book on Google Books,
+                    or "Delete" a book, removing it from the Mongo database.</p>
+                    <p>Technologies utilized: Node.js, React.js, Express.js, Google API, MongoDB</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m12 l4">
+            <div class="card hoverable teal">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <!-- <img class="activator responsive-img"src="images/nyt.jpg"> -->
+                        <picture id="pictureEl">
+                            <source type="image/webp" srcset="images/nyt.webp" />
+                            <source type="image/jpg" srcset="images/nyt.jpg" />
+                            <img class="activator responsive-img" src="images/nyt.jpg" alt="">
+                        </picture>
+                        <a class="btn-floating fab pulse activator"><i class="fas fa-info-circle"></i></a>
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator purple-text text-lighten-5">Food Scraper<i
+                            class="mdi-navigation-more-vert right"></i></span>
+                    <p><a class="purple-text text-lighten-5" href="https://mongo-scraper-ms.herokuapp.com/" target="_blank" rel="noopener noreferrer"><i
+                                class="tiny material-icons">visibility</i> Project
+                        </a></p>
+                    <p><a class="purple-text text-lighten-5" href="https://github.com/lramac3/mongoscraper.git" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-github"></i> Github</a></p>
+                </div>
+                <div class="card-reveal teal">
+                    <span class="card-title purple-text text-lighten-5">Food Scraper<i
+                            class="mdi-navigation-close right">x</i></span>
+                    <p>Find the latest articles from food section of New York Times.The user can click on the link to the website and save the article into a database. The user can also add notes and
+                    delete saved articles.</p>
+                    <p>Technologies utilized: Node.js, Express.js, Cheerio, MongoDB</p>
+                </div>
+            </div>
+        </div>
+<div class="col s12 m12 l4">
+    <div class="card hoverable teal">
+        <div class="card-image waves-effect waves-block waves-light">
+            <!-- <img class="activator responsive-img" src="images/Sequelize-Burger.jpg"> -->
+                <picture id="pictureEl">
+                    <source type="image/webp" srcset="images/Sequelize-Burger.webp" />
+                    <source type="image/jpg" srcset="images/Sequelize-Burger.jpg" />
+                    <img class="activator responsive-img" src="images/Sequelize-Burger.jpg" alt="">
+                </picture>
+            <a class="btn-floating fab pulse activator"><i class="fas fa-info-circle"></i></a>
+        </div>
+        <div class="card-content">
+            <span class="card-title activator purple-text text-lighten-5">Sequelize Da Burger<i
+                    class="mdi-navigation-more-vert right"></i></span>
+            <p><a class="purple-text text-lighten-5" href="https://sequelize-da-burger-sdb.herokuapp.com/" target="_blank" rel="noopener noreferrer"><i
+                        class="tiny material-icons">visibility</i> Project
+                </a></p>
+            <p><a class="purple-text text-lighten-5" href="https://github.com/lramac3/Sequelized-Burger"
+                    target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Github</a></p>
+        </div>
+        <div class="card-reveal teal">
+            <span class="card-title purple-text text-lighten-5">Sequelize Da Burger<i
+                    class="mdi-navigation-close right">x</i></span>
+            <p>This is a full-stack web application using MVC architecture wherein users can
+            keep a track of their favorite burgers. They can enter the burger names they wish to eat. Once they eat, they can either
+            like or dislike the restuarant. At any time, a user can see/edit all burgers that they haven't tried, liked or disliked
+            by him. User can also view the wish list of all users in ascending order of their names and burger names.</p>
+            <p>Technologies utilized: Node.js, Express.js, Express Handlebars, Sequelize ORM</p>
+        </div>
+    </div>
+</div>
+<div class="col s12 m12 l4">
+    <div class="card hoverable teal">
+        <div class="card-image waves-effect waves-block waves-light">
+            <!-- <img class="activator responsive-img" src="images/burger.jpg"> -->
+                <picture id="pictureEl">
+                    <source type="image/webp" srcset="images/burger.webp" />
+                    <source type="image/jpg" srcset="images/burger.jpg" />
+                    <img class="activator responsive-img" src="images/burger.jpg" alt="">
+                </picture>
+            <a class="btn-floating fab pulse activator"><i class="fas fa-info-circle"></i></a>
+        </div>
+        <div class="card-content">
+            <span class="card-title activator purple-text text-lighten-5">Eat Da Burger<i
+                    class="mdi-navigation-more-vert right"></i></span>
+            <p><a class="purple-text text-lighten-5" href="https://eat-da-burger-edb.herokuapp.com/"
+                    target="_blank" rel="noopener noreferrer"><i class="tiny material-icons">visibility</i> Project
+                </a></p>
+            <p><a class="purple-text text-lighten-5" href="https://github.com/lramac3/burger"
+                    target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Github</a></p>
+        </div>
+        <div class="card-reveal teal">
+            <span class="card-title purple-text text-lighten-5">Eat Da Burger<i
+                    class="mdi-navigation-close right">x</i></span>
+            <p>Burger Express is a an app that lets users input the names of burgers they'd like to eat. Whenever a user submits a burger's name, the app will add the burger to the Wanna Try list.
+            When the user clicks the like button, the burger will move to the left side of the page. When the user clicks the dislike button, the burger will move to the right side of the page.
+            If a burger is added to the like list or dislike list, user can delete the burger from the list by clicking the trash
+            icon next to the burger.Once the user deletes the burger name, user will have to add the name again to the list to see the same burger's name on
+            the Wanna Try list.
+</p>
+<p>Technologies utilized: Node.js, Express.js, Express Handlebars, MySQL, MVC Design</p>
+        </div>
+    </div>
+</div>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+
+    <div class="section responsive-img" style="background-color:teal;" id="skillsets">
+        <div class="container">
+            <div class="row">
+                <h3 class="center white-text">
+                    My Skills
+                </h3>
+            </div>
+            
+            <div class="carousel">
+                <a class="carousel-item" href="#one!">
+                    <!-- <img src="images/mongodb.jpg"> -->
+                    <picture>
+                        <source type="image/webp" srcset="images/mongodb.webp" />
+                        <source type="image/jpg" srcset="images/mongodb.jpg" />
+                        <img class="responsive-img" src="images/mongodb.jpg" alt="">
+                    </picture>
+                </a>
+                <a class="carousel-item" href="#two!">
+                    <!-- <img src="https://amandeepmittal.gallerycdn.vsassets.io/extensions/amandeepmittal/expressjs/2.0.0/1509881293872/Microsoft.VisualStudio.Services.Icons.Default"> -->
+                <picture>
+                    <source type="image/webp" srcset="images/express.webp" />
+                    <source type="image/png" srcset="images/express.png" />
+                    <img class="responsive-img" src="images/express.png" alt="">
+                </picture></a>
+                <a class="carousel-item" href="#three!">
+                    <!-- <img src="images/react.png"> -->
+                <picture>
+                    <source type="image/webp" srcset="images/react.webp" />
+                    <source type="image/png" srcset="images/react.png" />
+                    <img class="responsive-img" src="images/react.png" alt="">
+                </picture></a>
+                <a class="carousel-item" href="#four!">
+                    <!-- <img src="https://www.logolynx.com/images/logolynx/c5/c509c38cb89bcf556b2051222663f398.png"> -->
+                <picture>
+                    <source type="image/webp" srcset="images/node.webp" />
+                    <source type="image/png" srcset="images/node.png" />
+                    <img class="responsive-img" src="images/node.png" alt="">
+                </picture></a>
+                <a class="carousel-item" href="#five!">
+                    <!-- <img src="images/jquery.jpg"> -->
+                <picture>
+                    <source type="image/webp" srcset="images/jquery.webp" />
+                    <source type="image/jpg" srcset="images/jquery.jpg" />
+                    <img class="responsive-img" src="images/jquery.jpg" alt="">
+                </picture></a>
+               <a class="carousel-item" href="#five!">
+                   <!-- <img src="images/mysql.png"> -->
+                <picture>
+                    <source type="image/webp" srcset="images/mysql.webp" />
+                    <source type="image/png" srcset="images/mysql.png" />
+                    <img class="responsive-img" src="images/mysql.png" alt="">
+                </picture></a>
+               <a class="carousel-item" href="#five!">
+                   <!-- <img src="images/npm.png"> -->
+                <picture>
+                    <source type="image/webp" srcset="images/npm.webp" />
+                    <source type="image/png" srcset="images/npm.png" />
+                    <img class="responsive-img" src="images/npm.png" alt="">
+                </picture></a>
+               <a class="carousel-item" href="#five!">
+                   <!-- <img src="images/materialize.jpg"> -->
+                <picture>
+                    <source type="image/webp" srcset="images/materialize.webp" />
+                    <source type="image/jpg" srcset="images/materialize.jpg" />
+                    <img class="responsive-img" src="images/materialize.jpg" alt="">
+                </picture></a>
+                <a class="carousel-item" href="#five!">
+                    <!-- <img src="images/bootstrap.png"> -->
+                <picture>
+                    <source type="image/webp" srcset="images/bootstrap.webp" />
+                    <source type="image/png" srcset="images/bootstrap.png" />
+                    <img class="responsive-img" src="images/bootstrap.png" alt="">
+                </picture></a>
+                <a class="carousel-item" href="#five!">
+                    <!-- <img src="images/auth.png"> -->
+                <picture>
+                    <source type="image/webp" srcset="images/auth.webp" />
+                    <source type="image/png" srcset="images/auth.png" />
+                    <img class="responsive-img" src="images/auth.png" alt="">
+                </picture></a>
+            </div>
+        </div>
+    </div>
+
+
+<div class="section responsive-img" style="background-color:teal;" id="contact">
+    <div class="card-content">
+            <form name="contact-form" class="container1">
+        <span class="card-title center">
+            <h3>Have a question or want to work together?</h3>
+        </span>
+        <div class="row">
+<div class="input-field col s3 hide-on-med-and-down"></div>
+            <div class="input-field col s6 l3">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="first_name" type="text" required pattern="[a-zA-Z]+(\s[a-zA-Z]*){0,2}" minlength="4" maxlength="20"
+                    aria-required="true">
+                <label for="first_name"> Name</label>
+                <span class="helper-text silver" data-error="Please enter a valid name"></span>
+            </div>
+        <div class="input-field col s6 l3">
+            <i class="material-icons prefix">email</i>
+                <input id="email" type="email" required pattern="^\w+([.-]?\w+)*@\w+([.-]?\w+)*(.\w{2,3})+$"
+                    aria-required="true">
+                <label for="email">Email</label>
+                <span class="helper-text silver" data-error="Email Format: jdoe123@gmail.com"></span>
+            </div>
+            <div class="input-field col s3 hide-on-med-and-down"></div>
+
+            <div class="input-field col s4 hide-on-med-and-down"></div>
+            <div class="input-field col s12 l4">
+                <i class="material-icons prefix">subject</i>
+                <input id="subject" type="text" required pattern="[a-zA-Z0-9]+(\s[a-zA-Z]*){0,2}" minlength="4" maxlength="20" aria-required="true">
+                <label for="subject">Subject</label>
+                <span class="helper-text silver" data-error="Please enter a subject"></span>
+            </div>
+            <div class="input-field col s4 hide-on-med-and-down"></div>
+            <!-- <div class="input-field col s6">
+                <input id="phone_number" type="tel" class="validate" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    aria-required="true">
+                <label for="phone_number">Phone Number</label>
+                <span class="helper-text" data-error="Phone Number Format: 123-456-7890"></span>
+            </div> -->
+            <div class="row">
+            <div class="input-field col s12">
+                <i class="material-icons prefix">mode_edit</i>
+                <textarea id="textarea2" class="materialize-textarea" data-length="256" ></textarea>
+                <label for="textarea2">Message</label>
+            </div>     
+</div>
+        </div>
+        <div class="input-field col s12 center-align">
+            <button class="btn waves-effect waves-light grey" type="submit" name="action">Submit</button>
+        </div>
+</form>
+    </div>
+</div>
+<!-- End of Sign Up Card row -->
+<div class="col s12 m4 preloader-background">
+    <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+
+        <div class="spinner-layer spinner-red">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+
+        <div class="spinner-layer spinner-yellow">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+
+        <div class="spinner-layer spinner-green">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+    <!-- <h5><span >Loading</span></h5> -->
+    <br><br><br>
+    <p class="blinking teal-text">Loading</p>
+</div>
+
+    <footer class="section page-footer teal">
+        <div class="container center-align">
+            &#169; Linu Ramachandran 2019
+        </div>
+    </footer>
+
+
+    <!-- Compiled and minified JavaScript -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="javascript/app.js"></script>
+    <script src="javascript/modernizr-custom.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+    <script>
+    $('form').on('submit', (e) => {
+        e.preventDefault();
+        const email =$('#email').val().trim();
+        const subject = $('#subject').val().trim();
+        const text = $('#textarea2').val().trim();
+        const data ={email, subject, text};
+        $.post('/',data, function() {
+            console.log('Server received our data');
+          });
+
+        let frm = document.getElementsByName('contact-form')[0];
+        frm.submit(); // Submit the form
+        frm.reset();  // Reset all form data
+        return false; // Prevent page refresh
+      });
+    </script>
+
+</body>
+
+</html>
